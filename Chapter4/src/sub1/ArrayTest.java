@@ -3,6 +3,7 @@ package sub1;
 public class ArrayTest {
 	public static void main(String[] args) {
 		
+		
 		// 배열
 		int[] arr1 = {1,2,3,4,5};
 		char[] arr2 = {'A','B','C'};
