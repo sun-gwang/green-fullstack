@@ -8,7 +8,7 @@ public class Test02 {
 	
 	public static void main(String[] args) {
 		
-		int arr[] = { 17, 92, 18, 33, 58, 7, 26, 42, 98 };
+		int arr[] = { 17, 92, 18, 33, 58, 7, 26, 42 };
 				
 		int maxNum = arr[0];			
 
