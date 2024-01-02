@@ -4,6 +4,15 @@ package sub3;
  * 날짜 : 2024/01/02
  * 이름 : 김선광
  * 내용 : 클래스 변수 ,클래스 메서드 실습하기
+ * 
+ * 클래스 변수, 클래스 메서드(정적변수, 정적 메서드)
+ * - static을 선언한 변수, 메서드로 Method Area에 생성되는 특징
+ * - 별도의 객체생성(new)없이 클래스 타입으로 바로 참조, 호출
+ * - 객체간의 데이터 공유를 목적으로 정적변수, 정적메서드 사용
+ * 
+ * 싱글톤(Singleton)
+ * - static을 활용한 싱글톤 객체는 오직 하나의 인스턴스로 메모리상(Method Area)에 존재
+ * - 싱글톤 객체를 사용해서 메모리 절약과 성능 향상을 기대한다.
  */
 
 class Increment{
@@ -47,7 +56,7 @@ public class StaticTest {
 		Increment inc3 = new  Increment();
 		
 		
-		// 싱글톤 예제
+		// static을 활용한 싱글톤 예제
 		Calc cal1 = Calc.getInstance();
 		Calc cal2 = Calc.getInstance();
 		Calc cal3 = Calc.getInstance();
