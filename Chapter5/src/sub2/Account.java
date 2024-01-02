@@ -22,9 +22,11 @@ public class Account {
 	public void deposit(int money) {
 		this.balance+=money;
 	}
+	
 	public void withdraw(int money) {
 		balance-=money;
 	}
+	
 	public void show() {
 		System.out.println("은행명 : "+ this.bank);
 		System.out.println("계좌번호 : "+ this.id);
