@@ -1,5 +1,7 @@
 package sub3;
 
+import sub4.StockAccount;
+
 /*
  * 날짜 : 2024/01/02
  * 이름 : 김선광
@@ -71,6 +73,8 @@ public class StaticTest {
 		System.out.println("rs2:"+rs2);
 		System.out.println("rs3:"+rs3);
 		System.out.println("rs4:"+rs4);
+		
+	
 		
 	}
 
