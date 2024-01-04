@@ -53,9 +53,9 @@ public class StaticTest {
 		System.out.println("전체 차량 수:"+Car.count); // 정적변수는 객체 생성없이 바로 참조
 		
 		// Increment 실습
-		Increment inc1 = new  Increment();
-		Increment inc2 = new  Increment();
-		Increment inc3 = new  Increment();
+		Increment inc1 = new Increment();
+		Increment inc2 = new Increment();
+		Increment inc3 = new Increment();
 		
 		
 		// static을 활용한 싱글톤 예제
