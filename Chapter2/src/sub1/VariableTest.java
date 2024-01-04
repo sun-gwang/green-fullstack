@@ -36,5 +36,4 @@ public class VariableTest {
 		System.out.println("NUM:"+NUM);
 		
 	}
-
 }
