@@ -26,6 +26,7 @@ class Vehicle{
 
 class CarFactory{
 	private static CarFactory instance = new CarFactory();
+	
 	// new를 못하도록 private 선언
 	private CarFactory() {};
 	

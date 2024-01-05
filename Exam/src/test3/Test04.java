@@ -6,14 +6,14 @@ package test3;
  */
 
 class Student{
-	static int studentId;
+	public static int studentId; // static은 웬만하면 public
 	private String studentName;
 	private String major;
 	private int grade;
 	
 	public Student(String studentName, String major, int grade) {
 		
-		this.studentId++;
+		this.studentId++; // ++을 보고 int라는것을 유추, 직접 객체생성 보고 static유추
 		this.studentName = studentName;
 		this.major = major;
 		this.grade = grade;

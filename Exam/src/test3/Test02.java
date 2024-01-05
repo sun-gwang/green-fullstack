@@ -11,7 +11,7 @@ class King{
 	private int year;
 	
 	public King(int year) {
-		this("정조");
+		this("정조");      // 생성자를 호출 (문자열 한개) ->바로 밑 생성자 호출
 		this.year = year;
 	}
 

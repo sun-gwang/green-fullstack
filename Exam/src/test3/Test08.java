@@ -1,4 +1,5 @@
 package test3;
+
 /*
  * 날짜 : 2024/01/04
  * 이름 : 김선광
@@ -52,6 +53,7 @@ public class Test08 {
 		
 		p1.info();
 		p2.info();
+		
 	}
 
 }

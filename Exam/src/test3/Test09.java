@@ -34,15 +34,15 @@ public class Test09 {
 		
 		Test09 here = new Test09();
 		
-		Circle circle = new Circle();
+		Circle   circle   = new Circle();
 		Triangle triangle = new Triangle();
 		
-//		here.draw(circle);
-//		here.draw(triangle);
-//		
-//		public void draw(Shape obj) {
-//			obj.draw();
-//		}
+		here.draw(circle);
+		here.draw(triangle);
+		
+		public void draw (shaped obj) {
+			obj.draw();
+			}
 		
 	}
 

@@ -11,6 +11,7 @@ class Adder{
 		return instance;
 	}
 	
+	// 생성자 호출 막기
 	private Adder() {}
 
 	private Adder(int value) {
@@ -22,21 +23,23 @@ class Adder{
 
 
 public void add(int x, int y) {
-	this.x = x;
-	y++;
+	this.x = x; // x,y둘 다 연산자있으므로 int 유추
+	y++;       // this가 아니므로 위의 y가 아님 0으로 시작
 }
 
 public void add(int[] arr) {
 	this.x+=arr[0];
 	this.y+=arr[1];
 }
+
 public static void add(Adder a2) {
-	a2.x+=10;
+	a2.x+=10; // .을 보고객체다라고 유추
 }
 
-//public static Adder add (int a3, Adder value) {
-//	return new Adder(value);
-//}
+// 위의 생성자에서 value를 어떻게 선언했는지 확인
+public static Adder add (Adder a3, int value) {
+	return new Adder(value);
+}
 
 public void show() {
 	System.out.println("x:"+x);
@@ -60,8 +63,8 @@ public class Test06 {
 		Adder.add(a1);
 		a1.show();
 		
-//		a1=Adder.add(a1,3);
-//		a1=show();
+		a1=Adder.add(a1,3);
+		a1.show();
 	}
 
 }
