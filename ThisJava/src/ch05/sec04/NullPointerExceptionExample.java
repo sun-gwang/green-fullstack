@@ -1,4 +1,5 @@
 package ch05.sec04;
+// p151
 
 public class NullPointerExceptionExample {
 	public static void main(String[] args) {
