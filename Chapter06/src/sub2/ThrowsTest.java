@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class ThrowsTest {
 	public static void main(String[] args) {
-		try {
-			
-		method1(10);
+		
+		try {		
+			method1(10);
 		
 		}catch(Exception e) {
 			e.printStackTrace();
@@ -16,7 +16,7 @@ public class ThrowsTest {
 		
 	}
 
-	public static void method1(int n1) throws Exception{
+	public static void method1(int n1) throws Exception {
 		method2(n1);
 	}
 	
