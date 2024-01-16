@@ -1,6 +1,6 @@
 package ch05.sec05;
 
-// p156
+// p15
 public class EqualsExample {
 
 	public static void main(String[] args) {
