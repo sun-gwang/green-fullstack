@@ -15,10 +15,11 @@ public class DBHelper {
 	private final String PASS = "abcd1234";
 		
 	// DB 자원
-	protected Connection        conn = null;
-	protected Statement         stmt = null;
-	protected PreparedStatement psmt = null;
-	protected ResultSet           rs = null;
+	protected Connection           conn = null;
+	protected Statement            stmt = null;
+	protected PreparedStatement    psmt = null;
+	protected PreparedStatement psmtEtc = null;
+	protected ResultSet              rs = null;
 		
 	protected Connection getConnection() throws ClassNotFoundException ,SQLException {
 			
@@ -37,6 +38,10 @@ public class DBHelper {
 			}
 			
 			if(psmt!=null) {
+				psmt.close();
+			}
+			
+			if(psmtEtc!=null) {
 				psmt.close();
 			}
 			

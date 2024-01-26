@@ -108,15 +108,36 @@ public class MyShopMain {
 				
 				System.out.println("------상품 목록------");
 				
+				/*
 				for(ProductDTO product : products) {
 					
 					System.out.println(product);
 					
-				}
+				}*/
+				products.stream().forEach(System.out::println);
 				
 			}else if(answer == 4) {
-				// 주문하기
 				
+				// 주문하기
+				if(loginedCustomer == null) {
+					System.out.println("로그인을 먼저 하십시오");
+					continue;
+				}
+				
+				System.out.print("주문 상품번호 입력:");
+				int prodNo = Integer.parseInt(sc.next());
+				
+				System.out.print("주문 수량 입력:");
+				int prodCount = Integer.parseInt(sc.next());
+				
+				OrderDTO order = new OrderDTO();
+				order.setOrderProduct(prodNo);
+				order.setOrderCount(prodCount);
+				order.setOrderID(loginedCustomer.getCustID());
+				
+				orderDAO.insertOrder(order);
+				
+				System.out.println("주문 완료...");
 				
 			}
 			

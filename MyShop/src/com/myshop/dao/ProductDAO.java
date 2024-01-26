@@ -1,5 +1,6 @@
 package com.myshop.dao;
 
+import java.sql.PreparedStatement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -60,6 +61,7 @@ public class ProductDAO extends DBHelper {
 			}
 			
 			Close();
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -67,11 +69,17 @@ public class ProductDAO extends DBHelper {
 		return orders;
 		}
 	
+
 	public void updateProduct(ProductDTO dto) {
 		try {
-		
-	} catch (Exception e) {
-		e.printStackTrace();
+			conn = getConnection();
+			psmt = conn.prepareStatement(SQL.UPDATE_PRODUCT);
+			psmt.setInt(1, dto.getStock());
+			psmt.setInt(2, dto.getProdNo());
+			
+			
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 		
 	}
