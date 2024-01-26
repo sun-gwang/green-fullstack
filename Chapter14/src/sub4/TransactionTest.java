@@ -33,8 +33,8 @@ public class TransactionTest {
 			conn.setAutoCommit(false);
 			
 			// 3단계 SQL 실행 객체 생성(PreparedStatement)
-			String sql1 = "UPDATE `bank_account` SET `b_balance` = `b_balance`-10000 WHERE `a_no`=? ";
-			String sql2 = "UPDATE `bank_account` SEt `b_balance` = `b_balance`+10000 where `a_no`=? ";
+			String sql1 = "UPDATE `bank_account` SET `a_balance` = `a_balance`-10000 WHERE `a_no`=? ";
+			String sql2 = "UPDATE `bank_account` SEt `a_balance` = `a_balance`+10000 where `a_no`=? ";
 			
 			PreparedStatement psmt1 = conn.prepareStatement(sql1);
 			psmt1.setString(1, "101-11-1001");
