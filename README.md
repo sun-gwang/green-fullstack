@@ -31,6 +31,6 @@
 <h2>
 <details>
   <summary>🛸특정 브랜치만 클론하는 방법</summary>
-  git clone (branch-name) (remote-repo-url)
+  git clone -b (branch-name) (remote-repo-url)
 </details>
 </h2>
