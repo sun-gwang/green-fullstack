@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.브라우저 객체 모델</title>
+    <!--
+        날짜 : 2024/02/07
+        이름 : 김선광
+        내용 : 자바스크립트 브라우저 객체 모델(BOM)
+    -->
+</head>
+<body>
+    <h3>브라우저 객체 모델</h3>
+    <h4>window</h4>
+    <script>
+        //window : 자바스크립트 최상위 객체, 생략 가능
+        console.log(window);
+        // 브라우저 크기
+        document.write('innerWidth: '+window.innerWidth+'<br>');
+        document.write('innerHeight: '+window.innerHeight+'<br>');
+
+        // 새창 띄우기
+        window.open('./1.객체.html', '객체예제', 'width=600, height=500');
+
+        // ★브라우저 로컬 저장소 : 해당 페이지에서 저장한 데이터를 영구 저장★
+        window.localStorage.setItem('name', '김유신');
+        // ★브라우저 세션 저장소 : 해당 페이지가 실행되는 동안 저장되는 저장소★
+        window.sessionStorage.setItem('name', '김춘추');
+    </script>
+
+    <h4>navigator</h4>
+    <script>
+        //navigator 브라우저의 정보(버전,앱 등등..)
+        console.log(navigator);
+
+        document.write('브라우저 코드명 : ' + navigator.appCodeName + '<br>');
+        document.write('브라우저 이름 : ' + navigator.appName + '<br>');
+        document.write('브라우저 버전 : ' + navigator.appVersion + '<br>');
+        document.write('브라우저 플랫폼 : ' + navigator.platform + '<br>');
+        document.write('브라우저 정보 : ' + navigator.userAgent + '<br>');
+    </script>
+
+    <h4>location</h4>
+
+    <button onclick="f1()">새로고침</button>
+    <button onclick="f2()">네이버 이동</button>
+    <button onclick="f3()">구글 이동</button>
+    <br>
+
+    <script>
+        // location : 브라우저 주소 객체
+        confirm.log(location);
+        document.write('host 정보 : ' + location.host +'<br>');
+        function f1(){
+            // 페이지 새로고침
+            location.reload();
+        }
+        function f2(){
+            // 페이지 이동 : 주소 히스토리를 기록한다.
+            location.href="https://naver.com"
+        }
+        function f3(){
+            // 페이지 이동 : 주소 히스토리를 기록하지 않는다(뒤로가기 안됨)
+            location.replace("https://google.com")
+        }
+       
+    </script>
+    
+    <h4>history</h4>
+    <button onclick="back()">뒤로</button>
+    <button onclick="forward()">앞으로</button>
+    <br>
+    <script>
+        // histort : 브라우저 주소 이동 히스토리 객체
+        console.log(history);
+        document.write('history 길이 : ' + history.length + '<br>')
+
+        function back(){
+            history.back();
+        }
+
+        function forward(){
+            history.forward();
+        }
+    </script>
+</body>
+</html>

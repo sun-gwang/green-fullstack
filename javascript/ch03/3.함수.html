@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.함수</title>
+    <!--
+        날짜 : 2024/02/06
+        이름 : 김선광
+        내용 : 자바스크립트 함수 실습하기
+    -->
+</head>
+<body>
+    <h3>함수</h3>
+    <script>
+        // 선언 함수
+        function f(x){
+            let y = 2*x +3;
+            return y;
+        }
+
+        let y1 = f(1);
+        let y2 = f(2);
+        let y3 = f(3);
+
+        document.write('y1 : '+ y1 +"<br>");
+        document.write('y2 : '+ y2 +"<br>");
+        document.write('y3 : '+ y3 +"<br>");
+
+
+        // 익명함수
+        let a = function(x,y){
+                        let z = x+y;
+                        return z;
+                }
+        let z1 = a(1,2);
+        let z2 = a(2,3);
+        let z3 = a(3,4);
+        document.write('z1 : '+ z1 +'<br>');
+        document.write('z2 : '+ z2 +'<br>');
+        document.write('z3 : '+ z3 +'<br>');
+        
+        // 화살표 함수
+        let b = (x,y)=>{
+            return x+y;
+        }
+
+        let c = (x,y)=>x+y;
+
+        let r1 = b(1,2);
+        let r2 = b(1,2);
+        document.write('r1 : '+ r1 + '<br>');
+        document.write('r2 : '+ r2 + '<br>');
+
+        // 내장 함수 - 숫자관련
+        let str1 = '10';
+        let str2 = '3.14';
+        let str3 = '2024년';
+
+        let var1 = parseInt(str1);
+        let var2 = parseInt(str2);
+        let var3 = parseInt(str3);
+        let var4 = parseFloat(str2);
+        let var5 = isNaN(str1); // Nan(Not a Number) 숫자 여부 판단
+        let var6 = isNaN(str2);
+        let var7 = isNaN(str3);
+
+        document.write('var1 : ' + var1 + '<br>');
+        document.write('var2 : ' + var2 + '<br>');
+        document.write('var3 : ' + var3 + '<br>');
+        document.write('var4 : ' + var4 + '<br>');
+        document.write('var5 : ' + var5 + '<br>');
+        document.write('var6 : ' + var6 + '<br>');
+        document.write('var7 : ' + var7 + '<br>');
+        
+        // 내장 함수 - 변환관련
+        let num1 = 1;
+        let num2 = 2;
+        let rs1 = Number(str1);
+        let rs2 = Number(str2);
+        let rs3 = String(num1);
+        let rs4 = String(num2);
+        let rs5 = num2.toString();
+        document.write('rs1 : '+rs1+', type : '+typeof rs1 + '<br>');
+        document.write('rs1 : '+rs2+', type : '+typeof rs2 + '<br>');
+        document.write('rs1 : '+rs3+', type : '+typeof rs3 + '<br>');
+        document.write('rs1 : '+rs4+', type : '+typeof rs4 + '<br>');
+        document.write('rs1 : '+rs5+', type : '+typeof rs5 + '<br>');
+        
+
+        // 내장 함수 - 타이머관련
+        setTimeout( function(){
+            
+            console.log('3초 후에 실행!');
+
+
+        }, 3000); // 3초 후에 function 실행
+
+        setTimeout(()=>{
+            console.log('5초 후에 실행!');
+        },5000);
+        
+        setInterval(function() {
+            console.log('3초 마다 실행!');
+        }, 3000)
+
+        // 내장 함수 - 대화상자 관련
+        alert('기본 대화 상자');    // 위에 나옴
+        let result = confirm('확인, 취소 대화상자'); // 확인은 true 취소는 faulse
+
+        if(result){
+            alert('확인을 눌렀습니다.');
+        }else{
+            alert('취소를 눌렀습니다.');
+        }
+
+        let value = prompt('사용자 값 입력 대화상자');
+        alert('입력한 값 : '+value);
+    </script>
+</body>
+</html>
