@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.공공데이터</title>
+    <!--
+        날짜 : 2024/02/16
+        이름 : 김선광
+        내용 : 공공데이터 서비스 실습
+        요청주소 : http://apis.data.go.kr/6260000/AttractionService/getAttractionKr
+        인증키 : nOipDAUeNlRCC%2Fsk%2F3%2FtyEs6KmF4AKnJUEkQpMGzLMOXv%2FrfXEPQiHnd3V16fyy21zFZ5OuA0MLuvI2f%2BxcAaA%3D%3D
+        필수 파라미터 : ServiceKey, pageNo, numOfRows, resultType, UC_SEQ
+    -->
+</head>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=80308cbfc812b6f7032a9f5978d009b1"></script>
+<script>
+
+    window.onload = function(){
+
+        const key = 'X%2FjyADSnVVt3fioYEk7e%2B6h5%2FSMGQde5%2BWvtYP4PAOesObuIBCTt0FbaQ2PTtTQeJKsN8qisVE6SSEW6o2sGYQ%3D%3D';
+        const pageNo = 1;
+        const numOfRows = 10;
+                    
+        const url = `https://apis.data.go.kr/6260000/AttractionService/getAttractionKr?ServiceKey=${key}&pageNo=${pageNo}&numOfRows=${numOfRows}&resultType=json`;
+
+        fetch(url)
+            .then(response => response.json())
+            .then((data) => {
+
+                console.log(data);
+                
+                for(const item of data.getAttractionKr.item){
+
+                    console.log(item.MAIN_TITLE);
+                    console.log(item.LAT);
+                    console.log(item.LNG);
+
+                    // 마커를 생성합니다
+                    var marker = new kakao.maps.Marker({
+                        
+                        map: map,
+                        position: new kakao.maps.LatLng(item.LAT, item.LNG),
+                        title: item.MAIN_TITLE
+                        
+                    });
+
+                    // 마커가 지도 위에 표시되도록 설정합니다
+                    marker.setMap(map);
+                }
+
+            }).catch((err)=>{
+                console.log(err);
+            });
+    }
+
+
+</script>
+
+<body>
+    <h3>2.공공데이터</h3>
+
+    <div id="map2" style="width:100%;height:800px;"></div>
+    <script>
+        var mapContainer = document.getElementById('map2'), // 지도를 표시할 div 
+            mapOption = { 
+                center: new kakao.maps.LatLng(35.15952, 129.0602), // 지도의 중심좌표
+                level: 3 // 지도의 확대 레벨
+            };
+
+        var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+        // 마커가 표시될 위치입니다 
+        var markerPosition  = new kakao.maps.LatLng(35.15952, 129.0602); 
+
+        // 마커를 생성합니다
+        var marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+
+        // 마커가 지도 위에 표시되도록 설정합니다
+        marker.setMap(map);
+
+        // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+        // marker.setMap(null);    
+    </script>
+
+</body>
+</html>

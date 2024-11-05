@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout #1</title>
+    <!--
+        날짜 : 2024/01/26
+        이름 : 김선광  
+        내용 : 레이아웃 실습1
+    -->
+    <style>
+        /*초기화*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul,ol{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: #111;
+        }
+        
+        
+        #container {
+            width: 800px;
+            height: auto;
+            padding: 10px;
+            border: 1px solid black;
+            background: #fff;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+
+        /*header*/
+        header{
+            width: 100%;
+            height: 120px;
+            padding: 10px;
+            background: #eee;
+            border: 1px dashed black;
+            box-sizing: border-box;
+            
+        }
+        
+        /*main*/
+        main{
+            width: 100%;
+            height: 400px;
+            padding: 10px;
+            background: #ddd;
+            border: 1px dashed black;
+            box-sizing: border-box;
+            margin-top: 10px;
+        }
+
+        /*footer*/
+        footer{
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            background: #ccc;
+            border: 1px dashed black;
+            box-sizing: border-box;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="container">
+
+    <header> header </header>
+    <main>main</main>
+    <footer>footer</footer>  
+
+    </div>
+
+    
+</body>
+</html>
