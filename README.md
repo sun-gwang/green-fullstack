@@ -10,8 +10,7 @@
 > jsp
 > 
 > spring
->
-> spring-cloud-config
+
 
 ### 3. DataBase
 > mySQL
