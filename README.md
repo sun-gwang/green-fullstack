@@ -9,9 +9,9 @@
 > 
 > jsp
 > 
-> spring
+> springboot
 >
-> spring-cloud-config
+
 
 ### 3. DataBase
 > mySQL
