@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.가시속성</title>
+    <!--
+        날짜 : 2024/01/24
+        이름 : 김선광
+        내용 : 가시속성 실습하기
+
+    -->
+    <style>
+        span{background: orange;}
+        div>div{background: green;}
+
+        .box1>span:nth-child(1){display: none;}     /*공간까지 사라지게 한다.*/
+        .box1>span:nth-child(2){visibility: hidden;} 
+        .box1>span:nth-child(3){opacity: 0.5;}    /*0~1*/
+
+        .box2>span:nth-child(2){display: block;}
+        
+        .box3>div{
+                display: inline;
+                width: 100px;
+                hight: 100px;}     /* span */
+        
+        .box4>div{ 
+            display: inline-block;
+            width: 100px;
+            height: 100px;}
+    </style>
+</head>
+<body>
+    <h3>가시속성</h3>
+
+    <h4>display:non</h4>
+    <div class="box1">
+        <span>SAPN1</span>
+        <span>SPAN2</span>
+        <span>SPAN3</span>
+    </div>
+
+    <h4>display:non</h4>
+    <div class="box2">
+        <span>SAPN1</span>
+        <span>SPAN2</span>
+        <span>SPAN3</span>
+
+    </div>
+    <h4>display:non</h4>
+    <div class="box3">
+        <span>SAPN1</span>
+        <div>DIV2</div>
+        <span>SPAN3</span>
+    </div>
+
+    <h4>display:inline</h4>
+    <div class="box4">
+        <span>SAPN1</span>
+        <div>DIV2</div>
+        <span>SPAN3</span>
+    </div>
+
+    <h4>display:inline-block </h4>
+    <div class="box1">
+        <span>SAPN1</span>
+        <span>SPAN2</span>
+        <span>SPAN3</span>
+    </div>
+</body>
+</html>

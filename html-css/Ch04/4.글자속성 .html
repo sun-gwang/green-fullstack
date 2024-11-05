@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.글자속성</title>
+    <!--
+        날짜 : 2024/01/24
+        이름 : 김선광
+        내용 : 글자속성 실습하기
+    -->    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dokdo&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
+        
+        .box1 > p:nth-child(1) {font-size: 16px;}
+        .box1 > p:nth-child(2) {font-size: 32px;}
+        .box1 > p:nth-child(3) {font-size: 100%;}
+        .box1 > p:nth-child(4) {font-size: 200%;}
+        .box1 > p:nth-child(5) {font-size: 2em;}
+
+        .box2 > p:nth-child(1) {font-family: '궁서체';}
+        .box2 > p:nth-child(2) {font-family: '돋움체';}
+        .box2 > p:nth-child(3) {font-family: '고딕체';}
+        .box2 > p:nth-child(4) {
+            font-size: 32px;
+            font-family: 'Hi Melody', sans-serif;
+        }
+        .box2 > p:nth-child(5) {
+            font-size: 32px;
+            font-family: 'Dokdo', system-ui;
+        }
+
+        .box3 > p:nth-child(1) {font-weight: 100;}
+        .box3 > p:nth-child(2) {font-weight: 200;}
+        .box3 > p:nth-child(3) {font-weight: 300;}
+        .box3 > p:nth-child(4) {font-weight: 600;}
+        .box3 > p:nth-child(5) {font-weight: bold;}
+
+        .box4 > p:nth-child(1) {font: normal 16px '돋움';}
+        .box4 > p:nth-child(2) {font: bold 32px 'Hi Melody';}
+        .box4 > p:nth-child(3) {font: bold 16px 'Dokdo';}
+        .box4 > p:nth-child(4) {font: normal 16px '궁서체';}
+        .box4 > p:nth-child(5) {font: normal 16px '나눔고딕';}
+
+        .box5 > p:nth-child(1) {line-height: 16px;}
+        .box5 > p:nth-child(2) {line-height: 32px;}
+        .box5 > p:nth-child(3) {line-height: 64px;}
+        
+
+    </style>
+</head>
+<body>
+    <h3>4.글자속성</h3>
+
+    <h4>font-size</h4>
+    <div class="box1">
+        <p>Hello World!<br>안녕하세요.</p>
+        <p>Hello World!<br>안녕하세요.</p>
+        <p>Hello World!<br>안녕하세요.</p>
+        <p>Hello World!<br>안녕하세요.</p>
+        <p>Hello World!<br>안녕하세요.</p>
+    </div>
+
+    <h4>font-family</h4>
+    <div class="box2">
+        <p>Hello World!<br>안녕하세요.</p>
+        <p>Hello World!<br>안녕하세요.</p>
+        <p>Hello World!<br>안녕하세요.</p>
+        <p>Hello World!<br>안녕하세요.</p>
+        <p>Hello World!<br>안녕하세요.</p>
+    </div>
+
+    <h4>font-weight</h4>
+    <div class="box3">
+        <p>Hello World!<br>안녕하세요.</p>
+        <p>Hello World!<br>안녕하세요.</p>
+        <p>Hello World!<br>안녕하세요.</p>
+        <p>Hello World!<br>안녕하세요.</p>
+        <p>Hello World!<br>안녕하세요.</p>
+    </div>
+
+    <h4>font</h4>
+    <div class="box4">
+        <p>Hello World!<br>안녕하세요.</p>
+        <p>Hello World!<br>안녕하세요.</p>
+        <p>Hello World!<br>안녕하세요.</p>
+        <p>Hello World!<br>안녕하세요.</p>
+        <p>Hello World!<br>안녕하세요.</p>
+    </div>
+
+    <h4>line-height</h4>
+    <div class="box5">
+        <p>Hello World!<br>안녕하세요.</p>
+        <p>Hello World!<br>안녕하세요.</p>
+        <p>Hello World!<br>안녕하세요.</p>
+        <p>Hello World!<br>안녕하세요.</p>
+        <p>Hello World!<br>안녕하세요.</p>
+    </div>
+
+
+</body>
+</html>
