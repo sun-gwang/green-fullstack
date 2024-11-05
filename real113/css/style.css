@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    font: normal 12px '고딕';
+}
+il,ol {list-style: none;}
+
+a{text-decoration: none; color: #111;}
+
+#wrapper{
+    width: 100%;
+    height: auto;
+}
+
+/*헤더*/
+header{
+    width: 100%;
+    height: 80px;
+    background-image: url(../images/header_bg.gif);
+}
+
+header > div {
+    position: relative;
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+header > div > img {
+    margin-top: 6px;
+
+}
+header .gnb {
+    float: right;
+    width: 620px;
+    height: 32px;
+    margin-top: 14px;
+    overflow: hidden;
+}
+
+header .gnb > li {
+    float: left;
+    width: 20%;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: right;
+}
+header .gnb > li > a{
+    text-align: right;
+    line-height: 32px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+header .gnb > li > a:hover { 
+    color: #7b231f;
+}
+
+
+header > div > .latest {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+header > div > .latest > a{
+    display: inline-block;
+    color: grey;
+}
+
+header > div > .latest > a:nth-child(1) {
+  position: relative;
+  top: 4px;
+}
+header > div > .latest > a:nth-child(2) {
+    position: relative;
+    top: -4px;
+    left: 6px;
+  
+}
+
+
+/*메인*/
+main{
+    width: 1000px;
+    height: auto;
+    margin: 5px auto;
+}
+
+main > div {
+    overflow: hidden;
+}
+
+main > div > div {
+    border: 1px solid #7d7d7d;
+    box-sizing: border-box;
+}
+
+main > div > .banner {
+    float: left;
+    width: 588px;
+    height: 320px;
+    background-image: url(../images/main_banner_bg.jpg);
+}
+
+main > div > .banner > img {
+    margin-top: 100px;
+    margin-left: 160px;
+}
+
+main > div > .call {
+    position: relative;
+    float: right;
+    width: 406px;
+    height: 133px;
+    background-color: #f2f2f2;
+}
+
+main > div > .call > img {
+    position: absolute;
+}
+
+main > div > .call > img:nth-child(1) {
+    top: 20px;
+    left: 20px;
+}
+main > div > .call > img:nth-child(2) {
+    top: 46px;
+    left: 20px;
+
+}
+main > div > .call > img:nth-child(3) {
+
+    top: 77px;
+    left: 30px;
+}
+main > div > .call > img:nth-child(4) {
+    left: 302px;
+    
+}
+
+main > div > .qna {
+    float: right;
+    width: 406px;
+    height: 182px;
+    margin-top: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+main > div > .qna >h3{
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+main > div > .qna > table{
+    width: 100%;
+    height: auto;
+    margin-top: 6px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    
+}
+main > div > .qna > table td{
+    color: #6a6a6a;
+}
+main > div > .qna > table td:nth-child(2){
+    display: inline-block;
+    width: 296px;
+    text-overflow: hidden;
+    line-height: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+main > div > .qna > table a{
+    color: inherit;
+}
+main > div > .qna > table a:hover{
+    text-decoration: underline;
+    
+}
+
+main > section {
+    overflow: hidden;
+}
+
+main > section > aside{
+    float: left;
+    width: 195px;
+    height: 742px;
+    margin-top: 5px;
+    border: 1px solid #d7d7d7;
+    box-sizing: border-box;
+}
+
+main > section > aside > article {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+main > section > aside > article > h3 { 
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+main > section > aside > article > ul {
+    margin-top: 6px;
+}
+
+main > section > aside > article > ul > li{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 21px;
+}
+
+
+main > section > aside > article > a{
+    display: block;
+    width: 100%;
+    height: 33px;
+    border: 1px solid #d9d9d9;
+    margin-top: 6px;
+    font-size: 0;
+    background-color: #f6f6f6;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+main > section > aside > article > a:nth-of-type(1){
+    background-image: url(../images/aside_quick_court.png);
+    
+}
+main > section > aside > article > a:nth-of-type(2){
+    background-image: url(../images/aside_quick_google.png);
+}
+main > section > aside > article > a:nth-of-type(3){
+    background-image: url(../images/aside_quick_naver_map.png);
+}
+main > section > aside > article > a:nth-of-type(4){
+    background-image: url(../images/aside_quick_naver_subway.png);
+}
+
+main > section > aside >a {
+    position: relative;
+    display: block;
+    height: 83px;
+    border: 1px solid #d9d9d9;
+    box-sizing: border-box;
+}
+
+main > section > aside > .banner {
+    background-image:url(../images/aside_banner_bg.jpg);
+    position: relative;
+    left: -1px;
+    width: 195px;
+    height: 167px;
+    margin-top: 6px;
+    border: 1px solid #999;
+    box-sizing: border-box;
+
+}
+
+main > section > aside > .banner img:nth-child(1){
+   float: right;
+}
+main > section > aside > .banner img:nth-child(2){
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+main > section > aside > .banner > a > img {
+    clear: both;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+main > section > article {
+    float: right;
+    width: 800px;
+    height: 250px;
+    margin-top: 5px;
+    padding: 16px;
+    border: 1px solid #d7d7d7;
+    box-sizing: border-box;
+}
+
+main > section >article >h3{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+main > section > article >h3 > a {float: right}
+
+main > section article > ul{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 26px;
+}
+
+main > section > article > ul > li {
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+
+main > section > article > ul .thumb{
+   width: 150px;
+   height: 100px;
+}
+
+main > section > article > ul > li > a{
+    display: block;
+    text-align: center;
+}
+
+footer {
+    width: 1000px;
+    height: 130px;
+    border: 1px solid #d7d7d7;
+    border-top: 2px solid #777777;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+footer >p {
+    font-size: 11.5px;
+    color: #585858;
+    line-height: 20px;
+    margin-left: 10px;
+}
+
+footer > p > span {
+    margin-top: 6px;
+    font-weight: bold;
+}

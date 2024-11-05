@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>2.CSS자손선택자</title>
+    </head>
+        <!--
+            날짜 : 2024/01/23
+            이름 : 김선광  
+            내용 : CSS자손선택자 실습하기
+        -->
+        <style>
+            
+            /*자식 선택자*/
+            body>h3{
+                color:orange;
+            }
+
+           div > h3{      /* div 안에 있는 h3 애국가는 div의 자손이기 때문에 > 활용*/
+                color: blue;
+            }
+            .tx1>i{
+                color:green;
+            }
+
+            /*후손 선택자*/
+            .tx1 b{
+                color:yellow;
+            }
+            
+            .tx2 b{
+                color:green;
+            }
+
+            /* 형제 선택자*/
+            #seoul + li{
+                color: orange;
+            }
+            #seoul~li{
+                color:aqua;
+            }
+        </style>
+
+    <body>
+        <h3>2.CSS자손선택자</h3>
+        <div>
+            <h3>애국가</h3>
+            <p class="tx1">
+                동해물과 백두산이 마르고 닳도록 <br>
+                하느님이 보우하사 우리나라 만세<br>
+                <i>
+                    무궁화 삼천리 화려강산<br>
+                    <b>대한사람</b> 대한으로 길이 보전하세 
+                </i>
+            <p class="tx2">
+                동해물과 백두산이 마르고 닳도록 <br>
+                하느님이 보우하사 우리나라 만세 <br>
+                <i>
+                    무궁화 삼천리 화려강산<br>
+                    <b>대한사람</b>대한으로 길이 보전하세 
+                </i>
+            </p>
+        </div>
+
+        <ul>
+            <li id="seoul">서울</li>
+            <li>대전</li>
+            <li>대구</li>
+            <li>부산</li>
+            <li>광주</li>
+           
+        </ul>
+
+    </body>
+</html>

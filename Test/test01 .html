@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test1</title>
+    <!--
+        날짜 : 2024/01/25
+        이름 : 김선광
+        내용 : 배치 실습하기
+    -->
+    <style>
+        section{
+            display: inline-block;
+
+        }
+        section>div{
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            border: 1px dashed black;
+        }
+    </style>
+
+</head>
+<body>
+    <section>
+        <style>
+            .box1>div{
+                width: 200px;
+                height: 200px;
+                background: green;
+                float: right;
+            }
+        </style>
+    <h4>문제1</h4>
+    <div class="box1">
+    <div></div>
+    </div>
+    </section>
+
+    
+
+    <section>
+        <style>
+             .box2>div{
+                position: relative;
+                width: 200px;
+                height: 200px;
+                background: green;
+                float: right;
+                bottom: -100px;
+            }
+        </style>
+    <h4>문제2</h4>
+    <div class="box2">
+    <div></div>
+    </div>
+    </section>
+
+    <section>
+        <style>
+            .box3>div{
+                position: relative;
+                width: 200px;
+                height: 200px;
+                background: green;
+           }
+           .box3>div>div{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 100px;
+            height: 100px;
+            background: blue;    
+        }
+       </style>
+    <h4>문제3</h4>
+    
+    <div class="box3">
+        <div>
+            <div></div>
+        </div>
+    </div>
+    </section>
+
+    <section>
+        <style>
+            .box4>div{
+                position: relative;
+                width: 200px;
+                height: 200px;
+                background: green;
+                bottom: -100px;
+            }
+            .box4>div>div{
+                position: relative;
+                width: 100px;
+                height: 100px;
+                background: blue;
+                bottom: -100px;
+            }
+        </style>
+    <h4>문제4</h4>
+    <div class="box4">
+        <div>
+            <div></div>
+        </div>
+    </div>
+    </section>
+
+    <section>
+        <style>
+            .box5>div{
+                position:relative;
+                width: 200px;
+                height: 200px;
+                background: green;
+                left: 50px;
+            }
+
+            .box5>div>div{
+                position: relative;
+                width: 100px;
+                height: 100px;
+                background: blue;
+                left: 50px;
+                top: 50px;
+            }
+
+        </style>
+    <h4>문제5</h4>
+    <div class="box5">
+        <div>
+            <div></div>
+        </div>
+    </div>
+    </section>
+
+    <section>
+        <style>
+            .box6{
+                position: relative;
+            }
+            .box6>div{
+                position:absolute;
+                width: 200px;
+                height: 200px;
+                margin-top: -100px;
+                margin-left: -100px;
+                left: 50%;
+                top: 50%;
+                background: green;
+                
+            }
+            .box6>div>div{
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                background: blue;
+                left: 50px;
+                top: 50px;
+            }
+        </style>
+
+    <h4>문제6</h4>
+    <div class="box6">
+        <div>
+            <div></div>
+        </div>
+    </div>
+    </section>
+    <section>
+
+    <h4>문제7</h4>
+    <style>
+        .box7>div{
+            width: 100px; height: 100px; 
+
+        }
+        .box7>div:nth-child(1){
+            float: left;
+            clear: left;
+            position: relative;
+            left: 100px;          
+            background: red;
+        }
+        
+        .box7>div:nth-child(2){
+            float: left;
+            clear: left;
+            background: green;
+        }
+
+        .box7>div:nth-child(3){
+            float: left;
+            clear: left;
+            background: orange;
+            left: 100px;
+            position: relative;
+        }
+
+        .box7>div:nth-child(4){
+            position: relative;
+            clear: both;
+            background: blue;
+            float: right;
+            bottom: 200px;
+        }
+    </style>
+    <div class="box7">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    </section>
+
+    <section>
+        <style>
+            .box8>div{
+                width: 100px; height: 100px; 
+            }
+            .box8>div:nth-child(1){
+                background: red;
+                float: left;
+            }
+            .box8>div:nth-child(2){
+                
+                background: green;
+                float: right;
+            }
+            .box8>div:nth-child(3){
+                background: orange;
+                float: left;
+                clear: left;
+                position: relative;
+                left: 100px;
+            }
+            .box8>div:nth-child(4){
+                float: left;
+                clear: left;
+                background: pink;
+            }
+            .box8>div:nth-child(5){
+                background: blue;
+                bottom: 100px;
+                float: right;
+            }
+        </style>
+    <h4>문제8</h4>
+    <div class="box8">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    </section>
+
+    <section>
+        <style>
+            .box9{overflow: hidden;}
+            .box9>div:nth-child(1){
+                width: 100px; height: 100px; background: red;
+                float: left;
+            }
+            .box9>div:nth-child(2){
+                float: left;
+                width: 100px; height: 100px; background: green;
+            }
+            .box9>div:nth-child(3){
+                
+                width: 100px; height: 100px; background: blue;
+                clear: both;
+            }
+        </style>
+    <h4>문제9</h4>
+    <div class="box9">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    </section>
+
+    <section>
+
+    <h4>문제10</h4>
+    <style>
+        .box10>div:nth-child(1){
+            float: right;
+            width: 100px; height: 100px; background: red;}
+        .box10>div:nth-child(2){
+            float: right;
+            width: 100px; height: 100px; background: green;
+        }
+        .box10>div:nth-child(3){
+            float: right;
+            width: 100px; height: 100px; background: blue;
+            clear: both;
+        }
+    </style>
+    <div class="box10">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    </section>
+    <section>
+        <style>
+            .box11>div:nth-child(1){
+                float: left;
+                width: 100px; height: 100px; background: red;}
+            .box11>div:nth-child(2){
+                float: left;    
+                width: 100px; height: 100px; background: green;}
+            .box11>div:nth-child(3){
+                float:left;
+                width: 100px; height: 100px; background: blue;}
+            .box11>div:nth-child(4){
+                float: left;
+                width: 100px; height: 100px; background: orange;
+                clear: both;    
+            }
+            .box11>div:nth-child(5){
+                float: left;
+                width: 100px; height: 100px; background: pink;}
+
+            .box11>div:nth-child(6){
+                float: left;
+                width: 100px; height: 100px; background: #416303;
+                clear: both;
+            }
+        </style>
+    <h4>문제11</h4>
+    <div class="box11">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    </section>
+
+    <section>
+        <style>
+            .box12>div:nth-child(1){
+                float: right;
+                width: 100px; height: 100px;background: red;}
+            .box12>div:nth-child(2){
+                float: right;
+                width: 100px; height: 100px;background: blue;
+                clear: both;
+            }
+            .box12>div:nth-child(3){ 
+                float: right;
+                width: 100px; height: 100px; background: green;}
+            .box12>div:nth-child(4){
+                float: right;
+                width: 100px; height: 100px;background: orange;
+                clear: both;
+            }
+            .box12>div:nth-child(5){
+                float: right;
+                width: 100px; height: 100px;background: pink;}
+            .box12>div:nth-child(6){
+                float: right;
+                width: 100px; height: 100px;background: #416303;}
+        </style>
+    <h4>문제12</h4>
+    <div class="box12">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    </section>
+</body>
+</html>
