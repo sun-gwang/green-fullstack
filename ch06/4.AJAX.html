@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.AJAX</title>
+    <!--
+        날짜 : 2024/02/15
+        이름 : 김선광
+        내용 : 자바스크립트 AJAX 실습하기
+    -->
+    <script>
+        window.onload = function(){
+            const btnUser1  = document.getElementById('btnUser1');
+            const user1     = document.getElementById('user1');
+            const spans1    = user1.getElementsByTagName('span');
+
+            const btnUser2  = document.getElementById('btnUser2');
+            const user2     = document.getElementById('user2');
+            const spans2    = user2.getElementsByTagName('span');
+
+            const btnUsers = document.getElementById('btnUsers');
+            const table    = document.getElementsByTagName('table')[0];
+            
+
+            btnUser1.onclick=()=>{
+                //alert('click!');
+
+                const xhr = new XMLHttpRequest();
+                xhr.open('GET','http://127.0.0.1:5500/ch06/data/user1.json');
+                xhr.send();
+
+                // 응답처리 이벤트
+                xhr.onreadystatechange = function(){
+                    
+                    // 응답 완료
+                    if(xhr.readyState == XMLHttpRequest.DONE){
+
+                        if(xhr.status == 200){
+                            // 요청성공
+                            
+                            // 응답데이터는 JSON 문자열이므로 반드시 parse로 변환
+                            const resData = JSON.parse(xhr.responseText);
+                            spans1[0].innerText = resData.uid;
+                            spans1[1].innerText = resData.name;
+                            spans1[2].innerText = resData.age;
+                            spans1[3].innerText = resData.addr;
+                            // console.log(resData);
+                        }else{
+
+                            // 요청 실패
+                            console.log('요청실패...');
+                        }
+                    }
+
+                }
+
+            }
+
+            btnUser2.onclick = () =>{
+                //alert('click');
+
+                // 요청
+                fetch('./data/user2.json')
+                // 응답(json 변환)
+                .then((response) =>{
+                    console.log('response : ' + response);
+                    return response.json();
+                })
+
+                // 화면 출력
+                .then((data)=>{
+                    console.log('then2...' + data);
+                    spans2[0].innerText = data.uid;
+                    spans2[1].innerText = data.name;
+                    spans2[2].innerText = data.age;
+                    spans2[3].innerText = data.addr;
+                })
+                .catch(()=>{
+                    console.log('catch...');
+                });
+            }
+
+            btnUsers.addEventListener('click', function(){
+
+                fetch('./data/users.json')
+                .then(response => response.json())
+                .then((data)=>{
+                    for(const user of data.users){
+                        //console.log(user);
+                        const tr  = document.createElement('tr');
+                        const td1 = document.createElement('td');
+                        const td2 = document.createElement('td');
+                        const td3 = document.createElement('td');
+                        const td4 = document.createElement('td');
+
+                        td1.innerText = user.uid;
+                        td2.innerText = user.name;
+                        td3.innerText = user.age;
+                        td4.innerText = user.addr;
+
+                        tr.appendChild(td1);
+                        tr.appendChild(td2);
+                        tr.appendChild(td3);
+                        tr.appendChild(td4);
+                        table.appendChild(tr);
+                    }
+                })
+                .catch((err)=>{
+                    console.log(err);
+                });
+            });
+            
+            
+            
+        }
+    </script>
+</head>
+<body>
+    <h3>4.AJAX</h3>
+    <button id="btnUser1">user1 데이터 요청</button>
+    <p id="user1">
+        아이디 : <span></span><br>
+        이름   : <span></span><br>
+        나이   : <span></span><br>
+        주소   : <span></span><br>
+    </p>
+
+    <button id="btnUser2">user2 데이터 요청</button>
+    <p id="user2">
+        아이디 : <span></span><br>
+        이름   : <span></span><br>
+        나이   : <span></span><br>
+        주소   : <span></span><br>
+    </p>
+
+    <button id="btnUsers">users 데이터 요청</button>
+    <table border="1">
+        <tr>
+            <th>아이디</th>
+            <th>이름</th>
+            <th>나이</th>
+            <th>주소</th>
+        </tr>
+    </table>
+    
+</body>
+</html>

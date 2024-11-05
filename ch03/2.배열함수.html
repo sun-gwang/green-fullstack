@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.배열함수</title>
+    <!--
+        날짜 : 2024/02/05
+        이름 : 김선광
+        내용 : 자바스크립트 배열함수 실습
+    -->
+</head>
+<body>
+    <h3>2.배열함수</h3>
+    <script>
+        const arr1 = [1,2,3,4,5];
+        const arr2 = [6,7,8,9,10];
+
+        document.write('arr1 : '+ arr1+ '<br>');
+        document.write('arr2 : '+ arr2+ '<br>');
+        
+        // 배열 원소 추가
+        arr1.push(7);
+        arr1.push(8);
+        arr1.push(9);
+        document.write('arr1 : '+ arr1+ '<br>');
+        
+        // 배열 연결
+        const arr3 = arr1.concat(arr2);
+        document.write('arr3 : '+ arr3+ '<br>');
+        
+        // 배열 원소 문자열 생성
+        const result = arr3.join('-');
+        document.write('result : '+ result + '<br>');
+
+        // 배열 구조 분해 할당
+        const [var1, var2, var3, var4] = ['봄','여름','가을','겨울'];
+        document.write('var1 : '+var1+'<br>');
+        document.write('var2 : '+var2+'<br>');
+        document.write('var3 : '+var3+'<br>');
+        document.write('var4 : '+var4+'<br>');
+
+        const [first, ...others] = ['김유신','김춘추','장보고','강감찬','이순신'];
+        document.write('first : '+first + '<br>');
+        document.write('orthers : '+others + '<br>');
+    </script>
+</body>
+</html>
