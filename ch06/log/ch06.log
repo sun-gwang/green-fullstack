@@ -1,0 +1,868 @@
+2024-03-12T05:31:30.736+09:00  INFO 13024 --- [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 21.0.2 with PID 13024 (C:\Users\ksgg1\OneDrive\바탕 화면\Workspace\Spring\ch06\build\classes\java\main started by ksgg1 in C:\Users\ksgg1\OneDrive\바탕 화면\Workspace\Spring\ch06)
+2024-03-12T05:31:30.761+09:00  INFO 13024 --- [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T05:31:31.031+09:00  INFO 13024 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-12T05:31:31.032+09:00  INFO 13024 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-12T05:31:31.667+09:00  INFO 13024 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-12T05:31:31.677+09:00  INFO 13024 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-12T05:31:31.678+09:00  INFO 13024 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-12T05:31:31.708+09:00  INFO 13024 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
+2024-03-12T05:31:31.708+09:00  INFO 13024 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 675 ms
+2024-03-12T05:31:31.971+09:00  INFO 13024 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T05:31:32.194+09:00  INFO 13024 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-12T05:31:32.214+09:00  INFO 13024 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
+2024-03-12T05:31:32.221+09:00  INFO 13024 --- [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 2.045 seconds (process running for 2.807)
+2024-03-12T05:31:57.928+09:00  INFO 13024 --- [http-nio-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-12T05:31:57.928+09:00  INFO 13024 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-12T05:31:57.929+09:00  INFO 13024 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-12T05:31:58.269+09:00  WARN 13024 --- [http-nio-8080-exec-5] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-5][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 70, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T05:31:58.271+09:00  WARN 13024 --- [http-nio-8080-exec-5] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-5][/index] Deprecated unwrapped fragment expression "/include/_header.html" found in template /index, line 70, col 15. Please use the complete syntax of fragment expressions instead ("~{/include/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T05:31:58.274+09:00  WARN 13024 --- [http-nio-8080-exec-5] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-5][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 71, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T05:31:58.274+09:00  WARN 13024 --- [http-nio-8080-exec-5] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-5][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 71, col 15. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T05:31:58.276+09:00  WARN 13024 --- [http-nio-8080-exec-5] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-5][/index] Deprecated unwrapped fragment expression "/include/_header.html" found in template /index, line 73, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T05:31:58.277+09:00  WARN 13024 --- [http-nio-8080-exec-5] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-5][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 74, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T05:31:58.278+09:00  WARN 13024 --- [http-nio-8080-exec-5] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-5][/index] Deprecated unwrapped fragment expression "/include/_header.html" found in template /index, line 76, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T05:31:58.279+09:00  WARN 13024 --- [http-nio-8080-exec-5] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-5][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 77, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T05:31:58.280+09:00  WARN 13024 --- [http-nio-8080-exec-5] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-5][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 79, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T05:31:58.289+09:00  WARN 13024 --- [http-nio-8080-exec-5] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-5][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 80, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T05:32:01.152+09:00  INFO 13024 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-12T05:32:01.544+09:00  INFO 13024 --- [http-nio-8080-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@32513638
+2024-03-12T05:32:01.545+09:00  INFO 13024 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-12T05:32:31.772+09:00  WARN 13024 --- [http-nio-8080-exec-6] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-6][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 70, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T05:32:31.773+09:00  WARN 13024 --- [http-nio-8080-exec-6] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-6][/index] Deprecated unwrapped fragment expression "/include/_header.html" found in template /index, line 70, col 15. Please use the complete syntax of fragment expressions instead ("~{/include/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T05:32:31.774+09:00  WARN 13024 --- [http-nio-8080-exec-6] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-6][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 71, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T05:32:31.775+09:00  WARN 13024 --- [http-nio-8080-exec-6] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-6][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 71, col 15. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T05:32:31.776+09:00  WARN 13024 --- [http-nio-8080-exec-6] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-6][/index] Deprecated unwrapped fragment expression "/include/_header.html" found in template /index, line 73, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T05:32:31.778+09:00  WARN 13024 --- [http-nio-8080-exec-6] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-6][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 74, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T05:32:31.780+09:00  WARN 13024 --- [http-nio-8080-exec-6] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-6][/index] Deprecated unwrapped fragment expression "/include/_header.html" found in template /index, line 76, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T05:32:31.781+09:00  WARN 13024 --- [http-nio-8080-exec-6] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-6][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 77, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T05:32:31.783+09:00  WARN 13024 --- [http-nio-8080-exec-6] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-6][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 79, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T05:32:31.785+09:00  WARN 13024 --- [http-nio-8080-exec-6] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-6][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 80, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T05:32:42.834+09:00  WARN 13024 --- [http-nio-8080-exec-10] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-10][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 70, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T05:32:42.834+09:00  WARN 13024 --- [http-nio-8080-exec-10] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-10][/index] Deprecated unwrapped fragment expression "/include/_header.html" found in template /index, line 70, col 15. Please use the complete syntax of fragment expressions instead ("~{/include/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T05:32:42.835+09:00  WARN 13024 --- [http-nio-8080-exec-10] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-10][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 71, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T05:32:42.835+09:00  WARN 13024 --- [http-nio-8080-exec-10] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-10][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 71, col 15. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T05:32:42.837+09:00  WARN 13024 --- [http-nio-8080-exec-10] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-10][/index] Deprecated unwrapped fragment expression "/include/_header.html" found in template /index, line 73, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T05:32:42.837+09:00  WARN 13024 --- [http-nio-8080-exec-10] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-10][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 74, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T05:32:42.838+09:00  WARN 13024 --- [http-nio-8080-exec-10] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-10][/index] Deprecated unwrapped fragment expression "/include/_header.html" found in template /index, line 76, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T05:32:42.839+09:00  WARN 13024 --- [http-nio-8080-exec-10] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-10][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 77, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T05:32:42.841+09:00  WARN 13024 --- [http-nio-8080-exec-10] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-10][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 79, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T05:32:42.842+09:00  WARN 13024 --- [http-nio-8080-exec-10] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-10][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 80, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T05:39:50.237+09:00  INFO 13024 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-03-12T05:39:50.252+09:00  INFO 13024 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-12T05:39:50.261+09:00  INFO 13024 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-12T05:39:50.346+09:00  INFO 13024 --- [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 21.0.2 with PID 13024 (C:\Users\ksgg1\OneDrive\바탕 화면\Workspace\Spring\ch06\build\classes\java\main started by ksgg1 in C:\Users\ksgg1\OneDrive\바탕 화면\Workspace\Spring\ch06)
+2024-03-12T05:39:50.346+09:00  INFO 13024 --- [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T05:39:50.513+09:00  INFO 13024 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-12T05:39:50.514+09:00  INFO 13024 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-12T05:39:50.514+09:00  INFO 13024 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-12T05:39:50.526+09:00  INFO 13024 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
+2024-03-12T05:39:50.526+09:00  INFO 13024 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 176 ms
+2024-03-12T05:39:50.585+09:00  INFO 13024 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T05:39:50.637+09:00  INFO 13024 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-12T05:39:50.642+09:00  INFO 13024 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
+2024-03-12T05:39:50.644+09:00  INFO 13024 --- [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 0.316 seconds (process running for 501.231)
+2024-03-12T05:39:50.646+09:00  INFO 13024 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-12T06:09:17.836+09:00  INFO 1644 --- [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 21.0.2 with PID 1644 (C:\Users\ksgg1\OneDrive\바탕 화면\Workspace\Spring\ch06\build\classes\java\main started by ksgg1 in C:\Users\ksgg1\OneDrive\바탕 화면\Workspace\Spring\ch06)
+2024-03-12T06:09:17.837+09:00  INFO 1644 --- [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T06:09:17.982+09:00  INFO 1644 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-12T06:09:17.982+09:00  INFO 1644 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-12T06:09:18.718+09:00  INFO 1644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-12T06:09:18.724+09:00  INFO 1644 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-12T06:09:18.725+09:00  INFO 1644 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-12T06:09:18.756+09:00  INFO 1644 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
+2024-03-12T06:09:18.756+09:00  INFO 1644 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 773 ms
+2024-03-12T06:09:19.000+09:00  INFO 1644 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T06:09:19.234+09:00  INFO 1644 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-12T06:09:19.256+09:00  INFO 1644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
+2024-03-12T06:09:19.262+09:00  INFO 1644 --- [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 1.711 seconds (process running for 2.208)
+2024-03-12T06:09:24.512+09:00  INFO 1644 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-12T06:09:24.513+09:00  INFO 1644 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-12T06:09:24.513+09:00  INFO 1644 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-03-12T06:09:24.843+09:00  WARN 1644 --- [http-nio-8080-exec-2] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 70, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T06:09:24.844+09:00  WARN 1644 --- [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated unwrapped fragment expression "/include/_header.html" found in template /index, line 70, col 15. Please use the complete syntax of fragment expressions instead ("~{/include/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T06:09:24.847+09:00  WARN 1644 --- [http-nio-8080-exec-2] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 71, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T06:09:24.848+09:00  WARN 1644 --- [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 71, col 15. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T06:09:24.849+09:00  WARN 1644 --- [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated unwrapped fragment expression "/include/_header.html" found in template /index, line 73, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T06:09:24.851+09:00  WARN 1644 --- [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 74, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T06:09:24.852+09:00  WARN 1644 --- [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated unwrapped fragment expression "/include/_header.html" found in template /index, line 76, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T06:09:24.854+09:00  WARN 1644 --- [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 77, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T06:09:24.856+09:00  WARN 1644 --- [http-nio-8080-exec-2] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 79, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T06:09:24.867+09:00  WARN 1644 --- [http-nio-8080-exec-2] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 80, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T06:09:31.321+09:00  INFO 1644 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-12T06:09:31.601+09:00  INFO 1644 --- [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7910b1cd
+2024-03-12T06:09:31.602+09:00  INFO 1644 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-12T06:13:13.107+09:00  INFO 1644 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 29 class path changes (0 additions, 0 deletions, 29 modifications)
+2024-03-12T06:13:13.122+09:00  INFO 1644 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-12T06:13:13.129+09:00  INFO 1644 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-12T06:13:13.209+09:00  INFO 1644 --- [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 21.0.2 with PID 1644 (C:\Users\ksgg1\OneDrive\바탕 화면\Workspace\Spring\ch06\build\classes\java\main started by ksgg1 in C:\Users\ksgg1\OneDrive\바탕 화면\Workspace\Spring\ch06)
+2024-03-12T06:13:13.210+09:00  INFO 1644 --- [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T06:13:13.442+09:00  INFO 1644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-12T06:13:13.445+09:00  INFO 1644 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-12T06:13:13.445+09:00  INFO 1644 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-12T06:13:13.455+09:00  INFO 1644 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
+2024-03-12T06:13:13.455+09:00  INFO 1644 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 240 ms
+2024-03-12T06:13:13.535+09:00  INFO 1644 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T06:13:13.599+09:00  INFO 1644 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-12T06:13:13.605+09:00  INFO 1644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
+2024-03-12T06:13:13.607+09:00  INFO 1644 --- [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 0.421 seconds (process running for 236.552)
+2024-03-12T06:13:13.608+09:00  INFO 1644 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-12T06:13:13.652+09:00  INFO 1644 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-12T06:13:13.652+09:00  INFO 1644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-12T06:13:13.653+09:00  INFO 1644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-12T06:13:13.659+09:00  INFO 1644 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-03-12T06:13:13.683+09:00  INFO 1644 --- [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@8334d3a
+2024-03-12T06:13:13.685+09:00  INFO 1644 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-03-12T06:14:03.391+09:00  INFO 1644 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 29 class path changes (0 additions, 0 deletions, 29 modifications)
+2024-03-12T06:14:03.398+09:00  INFO 1644 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-03-12T06:14:03.404+09:00  INFO 1644 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-03-12T06:14:03.476+09:00  INFO 1644 --- [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 21.0.2 with PID 1644 (C:\Users\ksgg1\OneDrive\바탕 화면\Workspace\Spring\ch06\build\classes\java\main started by ksgg1 in C:\Users\ksgg1\OneDrive\바탕 화면\Workspace\Spring\ch06)
+2024-03-12T06:14:03.476+09:00  INFO 1644 --- [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T06:14:03.593+09:00  INFO 1644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-12T06:14:03.593+09:00  INFO 1644 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-12T06:14:03.593+09:00  INFO 1644 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-12T06:14:03.601+09:00  INFO 1644 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
+2024-03-12T06:14:03.601+09:00  INFO 1644 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 124 ms
+2024-03-12T06:14:03.657+09:00  INFO 1644 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T06:14:03.693+09:00  INFO 1644 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-12T06:14:03.697+09:00  INFO 1644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
+2024-03-12T06:14:03.699+09:00  INFO 1644 --- [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 0.236 seconds (process running for 286.645)
+2024-03-12T06:14:03.700+09:00  INFO 1644 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-12T06:16:27.653+09:00  INFO 1644 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-12T06:16:27.654+09:00  INFO 1644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-12T06:16:27.655+09:00  INFO 1644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-12T06:16:29.156+09:00  INFO 1644 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 29 class path changes (0 additions, 0 deletions, 29 modifications)
+2024-03-12T06:16:29.222+09:00  INFO 1644 --- [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 21.0.2 with PID 1644 (C:\Users\ksgg1\OneDrive\바탕 화면\Workspace\Spring\ch06\build\classes\java\main started by ksgg1 in C:\Users\ksgg1\OneDrive\바탕 화면\Workspace\Spring\ch06)
+2024-03-12T06:16:29.222+09:00  INFO 1644 --- [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T06:16:29.412+09:00  INFO 1644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-12T06:16:29.413+09:00  INFO 1644 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-12T06:16:29.413+09:00  INFO 1644 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-12T06:16:29.425+09:00  INFO 1644 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
+2024-03-12T06:16:29.425+09:00  INFO 1644 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 198 ms
+2024-03-12T06:16:29.499+09:00  INFO 1644 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T06:16:29.551+09:00  INFO 1644 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-12T06:16:29.557+09:00  INFO 1644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
+2024-03-12T06:16:29.558+09:00  INFO 1644 --- [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 0.356 seconds (process running for 432.504)
+2024-03-12T06:16:29.559+09:00  INFO 1644 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-12T06:16:56.649+09:00  INFO 1644 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-12T06:16:56.650+09:00  INFO 1644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-12T06:16:56.651+09:00  INFO 1644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-12T06:16:56.653+09:00  INFO 1644 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-03-12T06:16:56.674+09:00  INFO 1644 --- [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@38942a83
+2024-03-12T06:16:56.675+09:00  INFO 1644 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-03-12T06:16:58.366+09:00  WARN 1644 --- [http-nio-8080-exec-3] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-3][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 70, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T06:16:58.366+09:00  WARN 1644 --- [http-nio-8080-exec-3] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-3][/index] Deprecated unwrapped fragment expression "/include/_header.html" found in template /index, line 70, col 15. Please use the complete syntax of fragment expressions instead ("~{/include/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T06:16:58.368+09:00  WARN 1644 --- [http-nio-8080-exec-3] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-3][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 71, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T06:16:58.369+09:00  WARN 1644 --- [http-nio-8080-exec-3] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-3][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 71, col 15. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T06:16:58.370+09:00  WARN 1644 --- [http-nio-8080-exec-3] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-3][/index] Deprecated unwrapped fragment expression "/include/_header.html" found in template /index, line 73, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T06:16:58.371+09:00  WARN 1644 --- [http-nio-8080-exec-3] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-3][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 74, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T06:16:58.371+09:00  WARN 1644 --- [http-nio-8080-exec-3] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-3][/index] Deprecated unwrapped fragment expression "/include/_header.html" found in template /index, line 76, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T06:16:58.372+09:00  WARN 1644 --- [http-nio-8080-exec-3] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-3][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 77, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T06:16:58.372+09:00  WARN 1644 --- [http-nio-8080-exec-3] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-3][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 79, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T06:16:58.374+09:00  WARN 1644 --- [http-nio-8080-exec-3] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-3][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 80, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T06:22:23.021+09:00  INFO 1644 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 29 class path changes (0 additions, 0 deletions, 29 modifications)
+2024-03-12T06:22:23.029+09:00  INFO 1644 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-03-12T06:22:23.036+09:00  INFO 1644 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-03-12T06:22:23.105+09:00  INFO 1644 --- [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 21.0.2 with PID 1644 (C:\Users\ksgg1\OneDrive\바탕 화면\Workspace\Spring\ch06\build\classes\java\main started by ksgg1 in C:\Users\ksgg1\OneDrive\바탕 화면\Workspace\Spring\ch06)
+2024-03-12T06:22:23.105+09:00  INFO 1644 --- [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T06:22:23.238+09:00  INFO 1644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-12T06:22:23.239+09:00  INFO 1644 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-12T06:22:23.239+09:00  INFO 1644 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-12T06:22:23.247+09:00  INFO 1644 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
+2024-03-12T06:22:23.247+09:00  INFO 1644 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 138 ms
+2024-03-12T06:22:23.324+09:00  INFO 1644 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T06:22:23.370+09:00  INFO 1644 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-12T06:22:23.376+09:00  INFO 1644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
+2024-03-12T06:22:23.379+09:00  INFO 1644 --- [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 0.293 seconds (process running for 786.324)
+2024-03-12T06:22:23.380+09:00  INFO 1644 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-12T06:36:04.552+09:00  INFO 1644 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-12T06:36:04.552+09:00  INFO 1644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-12T06:36:04.553+09:00  INFO 1644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-12T06:36:04.589+09:00  WARN 1644 --- [http-nio-8080-exec-1] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-1][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 70, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T06:36:04.589+09:00  WARN 1644 --- [http-nio-8080-exec-1] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-1][/index] Deprecated unwrapped fragment expression "/include/_header.html" found in template /index, line 70, col 15. Please use the complete syntax of fragment expressions instead ("~{/include/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T06:36:04.591+09:00  WARN 1644 --- [http-nio-8080-exec-1] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-1][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 71, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T06:36:04.591+09:00  WARN 1644 --- [http-nio-8080-exec-1] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-1][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 71, col 15. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T06:36:04.592+09:00  WARN 1644 --- [http-nio-8080-exec-1] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-1][/index] Deprecated unwrapped fragment expression "/include/_header.html" found in template /index, line 73, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T06:36:04.593+09:00  WARN 1644 --- [http-nio-8080-exec-1] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-1][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 74, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T06:36:04.594+09:00  WARN 1644 --- [http-nio-8080-exec-1] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-1][/index] Deprecated unwrapped fragment expression "/include/_header.html" found in template /index, line 76, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T06:36:04.596+09:00  WARN 1644 --- [http-nio-8080-exec-1] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-1][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 77, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T06:36:04.597+09:00  WARN 1644 --- [http-nio-8080-exec-1] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-1][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 79, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T06:36:04.599+09:00  WARN 1644 --- [http-nio-8080-exec-1] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-1][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 80, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T06:36:06.294+09:00  INFO 1644 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 37 class path changes (4 additions, 0 deletions, 33 modifications)
+2024-03-12T06:36:06.377+09:00  INFO 1644 --- [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 21.0.2 with PID 1644 (C:\Users\ksgg1\OneDrive\바탕 화면\Workspace\Spring\ch06\build\classes\java\main started by ksgg1 in C:\Users\ksgg1\OneDrive\바탕 화면\Workspace\Spring\ch06)
+2024-03-12T06:36:06.377+09:00  INFO 1644 --- [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T06:36:06.641+09:00  INFO 1644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-12T06:36:06.643+09:00  INFO 1644 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-12T06:36:06.643+09:00  INFO 1644 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-12T06:36:06.655+09:00  INFO 1644 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
+2024-03-12T06:36:06.655+09:00  INFO 1644 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 273 ms
+2024-03-12T06:36:06.722+09:00  INFO 1644 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T06:36:06.781+09:00  INFO 1644 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-12T06:36:06.787+09:00  INFO 1644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
+2024-03-12T06:36:06.789+09:00  INFO 1644 --- [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 0.443 seconds (process running for 1609.734)
+2024-03-12T06:36:06.790+09:00  INFO 1644 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-12T06:36:06.825+09:00  INFO 1644 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-12T06:36:06.825+09:00  INFO 1644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-12T06:36:06.826+09:00  INFO 1644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-12T06:36:06.828+09:00  INFO 1644 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2024-03-12T06:36:06.842+09:00  INFO 1644 --- [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@63817e8c
+2024-03-12T06:36:06.842+09:00  INFO 1644 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-03-12T06:36:23.664+09:00  INFO 1644 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 32 class path changes (0 additions, 0 deletions, 32 modifications)
+2024-03-12T06:36:23.669+09:00  INFO 1644 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2024-03-12T06:36:23.672+09:00  INFO 1644 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2024-03-12T06:36:23.715+09:00  INFO 1644 --- [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 21.0.2 with PID 1644 (C:\Users\ksgg1\OneDrive\바탕 화면\Workspace\Spring\ch06\build\classes\java\main started by ksgg1 in C:\Users\ksgg1\OneDrive\바탕 화면\Workspace\Spring\ch06)
+2024-03-12T06:36:23.715+09:00  INFO 1644 --- [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T06:36:23.819+09:00  INFO 1644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-12T06:36:23.819+09:00  INFO 1644 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-12T06:36:23.819+09:00  INFO 1644 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-12T06:36:23.832+09:00  INFO 1644 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
+2024-03-12T06:36:23.832+09:00  INFO 1644 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 116 ms
+2024-03-12T06:36:23.882+09:00  INFO 1644 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T06:36:23.920+09:00  INFO 1644 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-12T06:36:23.926+09:00  INFO 1644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
+2024-03-12T06:36:23.928+09:00  INFO 1644 --- [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 0.225 seconds (process running for 1626.874)
+2024-03-12T06:36:23.929+09:00  INFO 1644 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-12T06:37:00.569+09:00  INFO 1644 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-12T06:37:00.569+09:00  INFO 1644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-12T06:37:00.570+09:00  INFO 1644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-12T06:37:00.571+09:00  INFO 1644 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2024-03-12T06:37:00.586+09:00  INFO 1644 --- [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4243a62b
+2024-03-12T06:37:00.586+09:00  INFO 1644 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2024-03-12T06:37:02.399+09:00  INFO 1644 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 32 class path changes (0 additions, 0 deletions, 32 modifications)
+2024-03-12T06:37:02.406+09:00  INFO 1644 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2024-03-12T06:37:02.410+09:00  INFO 1644 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2024-03-12T06:37:02.473+09:00  INFO 1644 --- [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 21.0.2 with PID 1644 (C:\Users\ksgg1\OneDrive\바탕 화면\Workspace\Spring\ch06\build\classes\java\main started by ksgg1 in C:\Users\ksgg1\OneDrive\바탕 화면\Workspace\Spring\ch06)
+2024-03-12T06:37:02.473+09:00  INFO 1644 --- [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T06:37:02.609+09:00  INFO 1644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-12T06:37:02.610+09:00  INFO 1644 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-12T06:37:02.610+09:00  INFO 1644 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-12T06:37:02.620+09:00  INFO 1644 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
+2024-03-12T06:37:02.620+09:00  INFO 1644 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 146 ms
+2024-03-12T06:37:02.696+09:00  INFO 1644 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T06:37:02.748+09:00  INFO 1644 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-12T06:37:02.754+09:00  INFO 1644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
+2024-03-12T06:37:02.755+09:00  INFO 1644 --- [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 0.294 seconds (process running for 1665.701)
+2024-03-12T06:37:02.756+09:00  INFO 1644 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-12T06:37:26.494+09:00  INFO 1644 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-12T06:37:26.494+09:00  INFO 1644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-12T06:37:26.495+09:00  INFO 1644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-12T06:37:26.498+09:00  INFO 1644 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2024-03-12T06:37:26.509+09:00  INFO 1644 --- [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@33d8551d
+2024-03-12T06:37:26.509+09:00  INFO 1644 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2024-03-12T06:38:56.754+09:00  INFO 1644 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-03-12T06:38:56.758+09:00  INFO 1644 --- [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2024-03-12T06:38:56.760+09:00  INFO 1644 --- [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2024-03-12T06:38:56.824+09:00  INFO 1644 --- [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 21.0.2 with PID 1644 (C:\Users\ksgg1\OneDrive\바탕 화면\Workspace\Spring\ch06\build\classes\java\main started by ksgg1 in C:\Users\ksgg1\OneDrive\바탕 화면\Workspace\Spring\ch06)
+2024-03-12T06:38:56.825+09:00  INFO 1644 --- [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T06:38:57.047+09:00  INFO 1644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-12T06:38:57.049+09:00  INFO 1644 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-12T06:38:57.049+09:00  INFO 1644 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-12T06:38:57.059+09:00  INFO 1644 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
+2024-03-12T06:38:57.059+09:00  INFO 1644 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 231 ms
+2024-03-12T06:38:57.131+09:00  INFO 1644 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T06:38:57.191+09:00  INFO 1644 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-12T06:38:57.203+09:00  INFO 1644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
+2024-03-12T06:38:57.205+09:00  INFO 1644 --- [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 0.399 seconds (process running for 1780.15)
+2024-03-12T06:38:57.206+09:00  INFO 1644 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-12T06:39:20.399+09:00  INFO 1644 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-12T06:39:20.399+09:00  INFO 1644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-12T06:39:20.400+09:00  INFO 1644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-12T06:39:20.402+09:00  INFO 1644 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2024-03-12T06:39:20.420+09:00  INFO 1644 --- [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5bf36060
+2024-03-12T06:39:20.420+09:00  INFO 1644 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2024-03-12T06:40:15.832+09:00  INFO 1644 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2024-03-12T06:40:15.836+09:00  INFO 1644 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2024-03-12T09:06:52.163+09:00  INFO 17628 --- [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 21.0.1 with PID 17628 (C:\Users\java\Desktop\WorkSpace\Spring\ch06\build\classes\java\main started by java in C:\Users\java\Desktop\WorkSpace\Spring\ch06)
+2024-03-12T09:06:52.164+09:00  INFO 17628 --- [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T09:06:52.285+09:00  INFO 17628 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-12T09:06:52.286+09:00  INFO 17628 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-12T09:06:52.817+09:00  INFO 17628 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-12T09:06:52.825+09:00  INFO 17628 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-12T09:06:52.825+09:00  INFO 17628 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-12T09:06:52.850+09:00  INFO 17628 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
+2024-03-12T09:06:52.850+09:00  INFO 17628 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 564 ms
+2024-03-12T09:06:53.056+09:00  INFO 17628 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T09:06:53.241+09:00  INFO 17628 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-12T09:06:53.259+09:00  INFO 17628 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
+2024-03-12T09:06:53.264+09:00  INFO 17628 --- [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 1.295 seconds (process running for 1.646)
+2024-03-12T09:07:00.642+09:00  INFO 17628 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-12T09:07:00.643+09:00  INFO 17628 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-12T09:07:00.643+09:00  INFO 17628 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-03-12T09:07:00.835+09:00  WARN 17628 --- [http-nio-8080-exec-2] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 70, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T09:07:00.837+09:00  WARN 17628 --- [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated unwrapped fragment expression "/include/_header.html" found in template /index, line 70, col 15. Please use the complete syntax of fragment expressions instead ("~{/include/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T09:07:00.838+09:00  WARN 17628 --- [http-nio-8080-exec-2] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 71, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T09:07:00.838+09:00  WARN 17628 --- [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 71, col 15. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T09:07:00.839+09:00  WARN 17628 --- [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated unwrapped fragment expression "/include/_header.html" found in template /index, line 73, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T09:07:00.839+09:00  WARN 17628 --- [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 74, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T09:07:00.840+09:00  WARN 17628 --- [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated unwrapped fragment expression "/include/_header.html" found in template /index, line 76, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T09:07:00.840+09:00  WARN 17628 --- [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 77, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T09:07:00.840+09:00  WARN 17628 --- [http-nio-8080-exec-2] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 79, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T09:07:00.846+09:00  WARN 17628 --- [http-nio-8080-exec-2] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 80, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T09:07:03.034+09:00  INFO 17628 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-12T09:07:03.256+09:00  INFO 17628 --- [http-nio-8080-exec-4] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@132e5022
+2024-03-12T09:07:03.257+09:00  INFO 17628 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-12T09:07:23.301+09:00  INFO 17628 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 32 class path changes (0 additions, 0 deletions, 32 modifications)
+2024-03-12T09:07:23.309+09:00  INFO 17628 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-12T09:07:23.314+09:00  INFO 17628 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-12T09:07:23.357+09:00  INFO 17628 --- [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 21.0.1 with PID 17628 (C:\Users\java\Desktop\WorkSpace\Spring\ch06\build\classes\java\main started by java in C:\Users\java\Desktop\WorkSpace\Spring\ch06)
+2024-03-12T09:07:23.357+09:00  INFO 17628 --- [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T09:07:23.465+09:00  INFO 17628 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-12T09:07:23.466+09:00  INFO 17628 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-12T09:07:23.466+09:00  INFO 17628 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-12T09:07:23.472+09:00  INFO 17628 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
+2024-03-12T09:07:23.472+09:00  INFO 17628 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 113 ms
+2024-03-12T09:07:23.516+09:00  INFO 17628 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T09:07:23.552+09:00  INFO 17628 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-12T09:07:23.556+09:00  INFO 17628 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
+2024-03-12T09:07:23.558+09:00  INFO 17628 --- [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 0.213 seconds (process running for 31.94)
+2024-03-12T09:07:23.559+09:00  INFO 17628 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-12T09:07:23.614+09:00  INFO 17628 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-12T09:07:23.614+09:00  INFO 17628 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-12T09:07:23.614+09:00  INFO 17628 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-03-12T09:07:23.616+09:00  INFO 17628 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-03-12T09:07:23.622+09:00  INFO 17628 --- [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5e709c5b
+2024-03-12T09:07:23.622+09:00  INFO 17628 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-03-12T09:07:24.606+09:00  WARN 17628 --- [http-nio-8080-exec-3] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-3][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 70, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T09:07:24.606+09:00  WARN 17628 --- [http-nio-8080-exec-3] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-3][/index] Deprecated unwrapped fragment expression "/include/_header.html" found in template /index, line 70, col 15. Please use the complete syntax of fragment expressions instead ("~{/include/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T09:07:24.607+09:00  WARN 17628 --- [http-nio-8080-exec-3] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-3][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 71, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T09:07:24.607+09:00  WARN 17628 --- [http-nio-8080-exec-3] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-3][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 71, col 15. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T09:07:24.607+09:00  WARN 17628 --- [http-nio-8080-exec-3] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-3][/index] Deprecated unwrapped fragment expression "/include/_header.html" found in template /index, line 73, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T09:07:24.607+09:00  WARN 17628 --- [http-nio-8080-exec-3] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-3][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 74, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T09:07:24.608+09:00  WARN 17628 --- [http-nio-8080-exec-3] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-3][/index] Deprecated unwrapped fragment expression "/include/_header.html" found in template /index, line 76, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T09:07:24.608+09:00  WARN 17628 --- [http-nio-8080-exec-3] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-3][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 77, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T09:07:24.608+09:00  WARN 17628 --- [http-nio-8080-exec-3] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-3][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 79, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T09:07:24.609+09:00  WARN 17628 --- [http-nio-8080-exec-3] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-3][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 80, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T09:07:44.236+09:00 ERROR 17628 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/ch06] threw exception [Request processing failed: org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '' for key 'user4.hp'
+### The error may exist in file [C:\Users\java\Desktop\WorkSpace\Spring\ch06\build\resources\main\mappers\user4.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE `user4` SET `name`=?, `gender`=?, `age`=?, `hp`=?, `addr`=? WHERE `uid`=?;
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '' for key 'user4.hp'
+; Duplicate entry '' for key 'user4.hp'] with root cause
+
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '' for key 'user4.hp'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:354) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48) ~[mybatis-3.5.14.jar:3.5.14]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75) ~[mybatis-3.5.14.jar:3.5.14]
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50) ~[mybatis-3.5.14.jar:3.5.14]
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.5.14.jar:3.5.14]
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) ~[mybatis-3.5.14.jar:3.5.14]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197) ~[mybatis-3.5.14.jar:3.5.14]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425) ~[mybatis-spring-3.0.3.jar:3.0.3]
+	at jdk.proxy2/jdk.proxy2.$Proxy65.update(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:288) ~[mybatis-spring-3.0.3.jar:3.0.3]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67) ~[mybatis-3.5.14.jar:3.5.14]
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141) ~[mybatis-3.5.14.jar:3.5.14]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86) ~[mybatis-3.5.14.jar:3.5.14]
+	at jdk.proxy5/jdk.proxy5.$Proxy84.updateUser4(Unknown Source) ~[na:na]
+	at kr.co.ch06.service.User4Service.updateUser4(User4Service.java:25) ~[main/:na]
+	at kr.co.ch06.controller.User4Controller.modify(User4Controller.java:48) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:259) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:192) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:920) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-03-12T09:07:49.470+09:00  WARN 17628 --- [http-nio-8080-exec-5] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-5][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 70, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T09:07:49.470+09:00  WARN 17628 --- [http-nio-8080-exec-5] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-5][/index] Deprecated unwrapped fragment expression "/include/_header.html" found in template /index, line 70, col 15. Please use the complete syntax of fragment expressions instead ("~{/include/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T09:07:49.471+09:00  WARN 17628 --- [http-nio-8080-exec-5] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-5][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 71, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T09:07:49.471+09:00  WARN 17628 --- [http-nio-8080-exec-5] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-5][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 71, col 15. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T09:07:49.471+09:00  WARN 17628 --- [http-nio-8080-exec-5] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-5][/index] Deprecated unwrapped fragment expression "/include/_header.html" found in template /index, line 73, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T09:07:49.471+09:00  WARN 17628 --- [http-nio-8080-exec-5] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-5][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 74, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T09:07:49.471+09:00  WARN 17628 --- [http-nio-8080-exec-5] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-5][/index] Deprecated unwrapped fragment expression "/include/_header.html" found in template /index, line 76, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T09:07:49.472+09:00  WARN 17628 --- [http-nio-8080-exec-5] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-5][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 77, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T09:07:49.472+09:00  WARN 17628 --- [http-nio-8080-exec-5] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-5][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 79, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T09:07:49.472+09:00  WARN 17628 --- [http-nio-8080-exec-5] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-5][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 80, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T09:07:54.417+09:00 ERROR 17628 --- [http-nio-8080-exec-7] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/ch06] threw exception [Request processing failed: org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '' for key 'user4.hp'
+### The error may exist in file [C:\Users\java\Desktop\WorkSpace\Spring\ch06\build\resources\main\mappers\user4.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE `user4` SET `name`=?, `gender`=?, `age`=?, `hp`=?, `addr`=? WHERE `uid`=?;
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '' for key 'user4.hp'
+; Duplicate entry '' for key 'user4.hp'] with root cause
+
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '' for key 'user4.hp'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:354) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48) ~[mybatis-3.5.14.jar:3.5.14]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75) ~[mybatis-3.5.14.jar:3.5.14]
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50) ~[mybatis-3.5.14.jar:3.5.14]
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.5.14.jar:3.5.14]
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) ~[mybatis-3.5.14.jar:3.5.14]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197) ~[mybatis-3.5.14.jar:3.5.14]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425) ~[mybatis-spring-3.0.3.jar:3.0.3]
+	at jdk.proxy2/jdk.proxy2.$Proxy65.update(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:288) ~[mybatis-spring-3.0.3.jar:3.0.3]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67) ~[mybatis-3.5.14.jar:3.5.14]
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141) ~[mybatis-3.5.14.jar:3.5.14]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86) ~[mybatis-3.5.14.jar:3.5.14]
+	at jdk.proxy5/jdk.proxy5.$Proxy84.updateUser4(Unknown Source) ~[na:na]
+	at kr.co.ch06.service.User4Service.updateUser4(User4Service.java:25) ~[main/:na]
+	at kr.co.ch06.controller.User4Controller.modify(User4Controller.java:48) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:259) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:192) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:920) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-03-12T09:08:40.064+09:00  INFO 17628 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-03-12T09:08:40.071+09:00  INFO 17628 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-03-12T09:08:40.075+09:00  INFO 17628 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-03-12T09:08:40.124+09:00  INFO 17628 --- [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 21.0.1 with PID 17628 (C:\Users\java\Desktop\WorkSpace\Spring\ch06\build\classes\java\main started by java in C:\Users\java\Desktop\WorkSpace\Spring\ch06)
+2024-03-12T09:08:40.124+09:00  INFO 17628 --- [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T09:08:40.232+09:00  INFO 17628 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-12T09:08:40.233+09:00  INFO 17628 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-12T09:08:40.233+09:00  INFO 17628 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-12T09:08:40.239+09:00  INFO 17628 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
+2024-03-12T09:08:40.239+09:00  INFO 17628 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 115 ms
+2024-03-12T09:08:40.277+09:00  INFO 17628 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T09:08:40.308+09:00  INFO 17628 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-12T09:08:40.313+09:00  INFO 17628 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
+2024-03-12T09:08:40.315+09:00  INFO 17628 --- [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 0.202 seconds (process running for 108.697)
+2024-03-12T09:08:40.315+09:00  INFO 17628 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-12T09:10:43.393+09:00  INFO 17628 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-12T09:10:43.393+09:00  INFO 17628 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-12T09:10:43.394+09:00  INFO 17628 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-12T09:10:43.395+09:00  INFO 17628 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-03-12T09:10:43.402+09:00  INFO 17628 --- [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a80cd9
+2024-03-12T09:10:43.402+09:00  INFO 17628 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-03-12T09:11:16.784+09:00  WARN 17628 --- [http-nio-8080-exec-2] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 70, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T09:11:16.785+09:00  WARN 17628 --- [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated unwrapped fragment expression "/include/_header.html" found in template /index, line 70, col 15. Please use the complete syntax of fragment expressions instead ("~{/include/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T09:11:16.785+09:00  WARN 17628 --- [http-nio-8080-exec-2] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 71, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T09:11:16.785+09:00  WARN 17628 --- [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 71, col 15. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T09:11:16.785+09:00  WARN 17628 --- [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated unwrapped fragment expression "/include/_header.html" found in template /index, line 73, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T09:11:16.786+09:00  WARN 17628 --- [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 74, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T09:11:16.786+09:00  WARN 17628 --- [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated unwrapped fragment expression "/include/_header.html" found in template /index, line 76, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T09:11:16.786+09:00  WARN 17628 --- [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 77, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T09:11:16.786+09:00  WARN 17628 --- [http-nio-8080-exec-2] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 79, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T09:11:16.787+09:00  WARN 17628 --- [http-nio-8080-exec-2] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 80, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T09:14:18.045+09:00  INFO 17628 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-03-12T09:14:18.049+09:00  INFO 17628 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-03-12T09:14:18.052+09:00  INFO 17628 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-03-12T09:14:18.098+09:00  INFO 17628 --- [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 21.0.1 with PID 17628 (C:\Users\java\Desktop\WorkSpace\Spring\ch06\build\classes\java\main started by java in C:\Users\java\Desktop\WorkSpace\Spring\ch06)
+2024-03-12T09:14:18.099+09:00  INFO 17628 --- [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T09:14:18.262+09:00  INFO 17628 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-12T09:14:18.263+09:00  INFO 17628 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-12T09:14:18.264+09:00  INFO 17628 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-12T09:14:18.271+09:00  INFO 17628 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
+2024-03-12T09:14:18.271+09:00  INFO 17628 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 169 ms
+2024-03-12T09:14:18.327+09:00  INFO 17628 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T09:14:18.383+09:00  INFO 17628 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-12T09:14:18.389+09:00  INFO 17628 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
+2024-03-12T09:14:18.391+09:00  INFO 17628 --- [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 0.305 seconds (process running for 446.772)
+2024-03-12T09:14:18.392+09:00  INFO 17628 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-12T12:44:26.442+09:00  INFO 4032 --- [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 21.0.1 with PID 4032 (C:\Users\java\Desktop\WorkSpace\Spring\ch06\build\classes\java\main started by java in C:\Users\java\Desktop\WorkSpace\Spring\ch06)
+2024-03-12T12:44:26.443+09:00  INFO 4032 --- [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T12:44:26.556+09:00  INFO 4032 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-12T12:44:26.557+09:00  INFO 4032 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-12T12:44:27.051+09:00  INFO 4032 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-12T12:44:27.057+09:00  INFO 4032 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-12T12:44:27.057+09:00  INFO 4032 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-12T12:44:27.078+09:00  INFO 4032 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
+2024-03-12T12:44:27.079+09:00  INFO 4032 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 522 ms
+2024-03-12T12:44:27.248+09:00  INFO 4032 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T12:44:27.414+09:00  INFO 4032 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-12T12:44:27.431+09:00  INFO 4032 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
+2024-03-12T12:44:27.435+09:00  INFO 4032 --- [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 1.177 seconds (process running for 1.467)
+2024-03-12T12:44:32.864+09:00  INFO 4032 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-12T12:44:32.864+09:00  INFO 4032 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-12T12:44:32.865+09:00  INFO 4032 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-12T12:44:33.030+09:00  WARN 4032 --- [http-nio-8080-exec-2] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 70, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T12:44:33.031+09:00  WARN 4032 --- [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated unwrapped fragment expression "/include/_header.html" found in template /index, line 70, col 15. Please use the complete syntax of fragment expressions instead ("~{/include/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T12:44:33.032+09:00  WARN 4032 --- [http-nio-8080-exec-2] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 71, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T12:44:33.032+09:00  WARN 4032 --- [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 71, col 15. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T12:44:33.033+09:00  WARN 4032 --- [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated unwrapped fragment expression "/include/_header.html" found in template /index, line 73, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T12:44:33.033+09:00  WARN 4032 --- [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 74, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T12:44:33.033+09:00  WARN 4032 --- [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated unwrapped fragment expression "/include/_header.html" found in template /index, line 76, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T12:44:33.034+09:00  WARN 4032 --- [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 77, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-12T12:44:33.034+09:00  WARN 4032 --- [http-nio-8080-exec-2] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 79, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T12:44:33.038+09:00  WARN 4032 --- [http-nio-8080-exec-2] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-2][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 80, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-12T12:51:02.753+09:00  INFO 11868 --- [main] kr.co.ch06.mapper.User1MapperTest        : Starting User1MapperTest using Java 21.0.1 with PID 11868 (started by java in C:\Users\java\Desktop\WorkSpace\Spring\ch06)
+2024-03-12T12:51:02.754+09:00  INFO 11868 --- [main] kr.co.ch06.mapper.User1MapperTest        : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T12:51:03.609+09:00  INFO 11868 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T12:51:03.974+09:00  INFO 11868 --- [main] kr.co.ch06.mapper.User1MapperTest        : Started User1MapperTest in 1.386 seconds (process running for 1.892)
+2024-03-12T12:51:04.499+09:00  INFO 11868 --- [main] kr.co.ch06.mapper.User1MapperTest        : deleteUser1
+2024-03-12T12:51:04.511+09:00  INFO 11868 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-12T12:51:04.728+09:00  INFO 11868 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4604e051
+2024-03-12T12:51:04.729+09:00  INFO 11868 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-12T12:51:04.774+09:00  INFO 11868 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-12T12:51:04.777+09:00  INFO 11868 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-12T12:52:02.876+09:00  INFO 11864 --- [main] kr.co.ch06.mapper.User2MapperTest        : Starting User2MapperTest using Java 21.0.1 with PID 11864 (started by java in C:\Users\java\Desktop\WorkSpace\Spring\ch06)
+2024-03-12T12:52:02.877+09:00  INFO 11864 --- [main] kr.co.ch06.mapper.User2MapperTest        : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T12:52:03.763+09:00  INFO 11864 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T12:52:04.142+09:00  INFO 11864 --- [main] kr.co.ch06.mapper.User2MapperTest        : Started User2MapperTest in 1.427 seconds (process running for 1.926)
+2024-03-12T12:52:04.647+09:00  INFO 11864 --- [main] kr.co.ch06.mapper.User2MapperTest        : insertUser2()...
+2024-03-12T12:52:04.659+09:00  INFO 11864 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-12T12:52:04.870+09:00  INFO 11864 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@669580e2
+2024-03-12T12:52:04.872+09:00  INFO 11864 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-12T12:52:04.921+09:00  INFO 11864 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-12T12:52:04.924+09:00  INFO 11864 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-12T13:30:48.638+09:00  INFO 13884 --- [Test worker] kr.co.ch06.mapper.User2MapperTest        : Starting User2MapperTest using Java 21.0.1 with PID 13884 (started by java in C:\Users\java\Desktop\WorkSpace\Spring\ch06)
+2024-03-12T13:30:48.639+09:00  INFO 13884 --- [Test worker] kr.co.ch06.mapper.User2MapperTest        : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T13:30:49.486+09:00  INFO 13884 --- [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T13:30:49.835+09:00  INFO 13884 --- [Test worker] kr.co.ch06.mapper.User2MapperTest        : Started User2MapperTest in 1.332 seconds (process running for 2.02)
+2024-03-12T13:30:50.301+09:00  INFO 13884 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-12T13:30:50.510+09:00  INFO 13884 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6d5de79a
+2024-03-12T13:30:50.511+09:00  INFO 13884 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-12T13:30:50.546+09:00  INFO 13884 --- [Test worker] kr.co.ch06.mapper.User2MapperTest        : User2DTO(uid=A107, name=�׽�Ʈ, birth=2024-03-12, addr=�׽�Ʈ��)
+2024-03-12T13:30:50.566+09:00  INFO 13884 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-12T13:30:50.570+09:00  INFO 13884 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-12T13:31:23.102+09:00  INFO 17100 --- [main] kr.co.ch06.mapper.User2MapperTest        : Starting User2MapperTest using Java 21.0.1 with PID 17100 (started by java in C:\Users\java\Desktop\WorkSpace\Spring\ch06)
+2024-03-12T13:31:23.103+09:00  INFO 17100 --- [main] kr.co.ch06.mapper.User2MapperTest        : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T13:31:23.924+09:00  INFO 17100 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T13:31:24.268+09:00  INFO 17100 --- [main] kr.co.ch06.mapper.User2MapperTest        : Started User2MapperTest in 1.34 seconds (process running for 1.83)
+2024-03-12T13:31:24.745+09:00  INFO 17100 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-12T13:31:24.958+09:00  INFO 17100 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6df87ffd
+2024-03-12T13:31:24.960+09:00  INFO 17100 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-12T13:31:24.989+09:00  INFO 17100 --- [main] kr.co.ch06.mapper.User2MapperTest        : User2DTO(uid=A107, name=테스트, birth=2024-03-12, addr=테스트시)
+2024-03-12T13:31:25.004+09:00  INFO 17100 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-12T13:31:25.007+09:00  INFO 17100 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-12T13:34:21.274+09:00  INFO 5352 --- [main] kr.co.ch06.mapper.User2MapperTest        : Starting User2MapperTest using Java 21.0.1 with PID 5352 (started by java in C:\Users\java\Desktop\WorkSpace\Spring\ch06)
+2024-03-12T13:34:21.275+09:00  INFO 5352 --- [main] kr.co.ch06.mapper.User2MapperTest        : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T13:34:22.156+09:00  INFO 5352 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T13:34:22.496+09:00  INFO 5352 --- [main] kr.co.ch06.mapper.User2MapperTest        : Started User2MapperTest in 1.394 seconds (process running for 1.915)
+2024-03-12T13:34:22.988+09:00  INFO 5352 --- [main] kr.co.ch06.mapper.User2MapperTest        : selectUser2s()...
+2024-03-12T13:34:23.000+09:00  INFO 5352 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-12T13:34:23.232+09:00  INFO 5352 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6df87ffd
+2024-03-12T13:34:23.234+09:00  INFO 5352 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-12T13:34:23.278+09:00  INFO 5352 --- [main] kr.co.ch06.mapper.User2MapperTest        : User2DTO(uid=A101, name=노네임, birth=2024-02-06, addr=없어요)
+2024-03-12T13:34:23.279+09:00  INFO 5352 --- [main] kr.co.ch06.mapper.User2MapperTest        : User2DTO(uid=A102, name=김춘추, birth=1972-11-23, addr=경남 경주시)
+2024-03-12T13:34:23.279+09:00  INFO 5352 --- [main] kr.co.ch06.mapper.User2MapperTest        : User2DTO(uid=A103, name=장보고, birth=1978-03-01, addr=전남 완도군)
+2024-03-12T13:34:23.279+09:00  INFO 5352 --- [main] kr.co.ch06.mapper.User2MapperTest        : User2DTO(uid=A105, name=강감찬, birth=1979-08-16, addr=서울시 관악구)
+2024-03-12T13:34:23.279+09:00  INFO 5352 --- [main] kr.co.ch06.mapper.User2MapperTest        : User2DTO(uid=A106, name=이순신, birth=1981-05-23, addr=부산시 진구)
+2024-03-12T13:34:23.279+09:00  INFO 5352 --- [main] kr.co.ch06.mapper.User2MapperTest        : User2DTO(uid=A107, name=테스트, birth=2024-03-12, addr=테스트시)
+2024-03-12T13:34:23.295+09:00  INFO 5352 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-12T13:34:23.299+09:00  INFO 5352 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-12T13:38:48.984+09:00  INFO 10456 --- [main] kr.co.ch06.mapper.User2MapperTest        : Starting User2MapperTest using Java 21.0.1 with PID 10456 (started by java in C:\Users\java\Desktop\WorkSpace\Spring\ch06)
+2024-03-12T13:38:48.985+09:00  INFO 10456 --- [main] kr.co.ch06.mapper.User2MapperTest        : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T13:38:49.816+09:00  INFO 10456 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T13:38:50.185+09:00  INFO 10456 --- [main] kr.co.ch06.mapper.User2MapperTest        : Started User2MapperTest in 1.365 seconds (process running for 1.872)
+2024-03-12T13:38:50.659+09:00  INFO 10456 --- [main] kr.co.ch06.mapper.User2MapperTest        : updateUser2()...
+2024-03-12T13:38:50.670+09:00  INFO 10456 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-12T13:38:50.891+09:00  INFO 10456 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5d22ed6c
+2024-03-12T13:38:50.892+09:00  INFO 10456 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-12T13:38:50.944+09:00  INFO 10456 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-12T13:38:50.948+09:00  INFO 10456 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-12T13:39:42.417+09:00  INFO 3780 --- [main] kr.co.ch06.mapper.User2MapperTest        : Starting User2MapperTest using Java 21.0.1 with PID 3780 (started by java in C:\Users\java\Desktop\WorkSpace\Spring\ch06)
+2024-03-12T13:39:42.418+09:00  INFO 3780 --- [main] kr.co.ch06.mapper.User2MapperTest        : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T13:39:43.316+09:00  INFO 3780 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T13:39:43.685+09:00  INFO 3780 --- [main] kr.co.ch06.mapper.User2MapperTest        : Started User2MapperTest in 1.43 seconds (process running for 1.924)
+2024-03-12T13:39:44.191+09:00  INFO 3780 --- [main] kr.co.ch06.mapper.User2MapperTest        : updateUser2()...
+2024-03-12T13:39:44.202+09:00  INFO 3780 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-12T13:39:44.418+09:00  INFO 3780 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a4b8e25
+2024-03-12T13:39:44.419+09:00  INFO 3780 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-12T13:39:44.469+09:00  INFO 3780 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-12T13:39:44.472+09:00  INFO 3780 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-12T13:43:42.655+09:00  INFO 14248 --- [main] kr.co.ch06.mapper.User2MapperTest        : Starting User2MapperTest using Java 21.0.1 with PID 14248 (started by java in C:\Users\java\Desktop\WorkSpace\Spring\ch06)
+2024-03-12T13:43:42.656+09:00  INFO 14248 --- [main] kr.co.ch06.mapper.User2MapperTest        : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T13:43:43.502+09:00  INFO 14248 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T13:43:43.890+09:00  INFO 14248 --- [main] kr.co.ch06.mapper.User2MapperTest        : Started User2MapperTest in 1.409 seconds (process running for 1.908)
+2024-03-12T13:43:44.409+09:00  INFO 14248 --- [main] kr.co.ch06.mapper.User2MapperTest        : deleteUser2()
+2024-03-12T13:43:44.421+09:00  INFO 14248 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-12T13:43:44.689+09:00  INFO 14248 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5d22ed6c
+2024-03-12T13:43:44.691+09:00  INFO 14248 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-12T13:43:44.740+09:00  INFO 14248 --- [main] kr.co.ch06.mapper.User2MapperTest        : updateUser2()...
+2024-03-12T13:43:44.759+09:00  INFO 14248 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-12T13:43:44.763+09:00  INFO 14248 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-12T21:52:56.319+09:00  INFO 14736 --- [main] kr.co.ch06.mapper.User3MapperTest        : Starting User3MapperTest using Java 21.0.2 with PID 14736 (started by ksgg1 in C:\Users\ksgg1\OneDrive\바탕 화면\Workspace\Spring\ch06)
+2024-03-12T21:52:56.320+09:00  INFO 14736 --- [main] kr.co.ch06.mapper.User3MapperTest        : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T21:52:58.201+09:00  INFO 14736 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T21:52:58.662+09:00  INFO 14736 --- [main] kr.co.ch06.mapper.User3MapperTest        : Started User3MapperTest in 2.685 seconds (process running for 3.598)
+2024-03-12T21:52:59.374+09:00  INFO 14736 --- [main] kr.co.ch06.mapper.User3MapperTest        : insertUser3()...
+2024-03-12T21:52:59.401+09:00  INFO 14736 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-12T21:52:59.841+09:00  INFO 14736 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e0883f3
+2024-03-12T21:52:59.846+09:00  INFO 14736 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-12T21:52:59.921+09:00  INFO 14736 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-12T21:52:59.927+09:00  INFO 14736 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-12T21:54:10.100+09:00  INFO 18720 --- [main] kr.co.ch06.mapper.User3MapperTest        : Starting User3MapperTest using Java 21.0.2 with PID 18720 (started by ksgg1 in C:\Users\ksgg1\OneDrive\바탕 화면\Workspace\Spring\ch06)
+2024-03-12T21:54:10.101+09:00  INFO 18720 --- [main] kr.co.ch06.mapper.User3MapperTest        : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T21:54:11.511+09:00  INFO 18720 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T21:54:11.924+09:00  INFO 18720 --- [main] kr.co.ch06.mapper.User3MapperTest        : Started User3MapperTest in 2.132 seconds (process running for 2.943)
+2024-03-12T21:54:12.649+09:00  INFO 18720 --- [main] kr.co.ch06.mapper.User3MapperTest        : insertUser3()...
+2024-03-12T21:54:12.661+09:00  INFO 18720 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-12T21:54:12.950+09:00  INFO 18720 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@626df173
+2024-03-12T21:54:12.953+09:00  INFO 18720 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-12T21:54:13.162+09:00  INFO 18720 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-12T21:54:13.171+09:00  INFO 18720 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-12T21:54:41.016+09:00  INFO 12352 --- [main] kr.co.ch06.mapper.User3MapperTest        : Starting User3MapperTest using Java 21.0.2 with PID 12352 (started by ksgg1 in C:\Users\ksgg1\OneDrive\바탕 화면\Workspace\Spring\ch06)
+2024-03-12T21:54:41.017+09:00  INFO 12352 --- [main] kr.co.ch06.mapper.User3MapperTest        : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T21:54:42.404+09:00  INFO 12352 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T21:54:42.826+09:00  INFO 12352 --- [main] kr.co.ch06.mapper.User3MapperTest        : Started User3MapperTest in 2.057 seconds (process running for 2.788)
+2024-03-12T21:54:43.593+09:00  INFO 12352 --- [main] kr.co.ch06.mapper.User3MapperTest        : insertUser3()...
+2024-03-12T21:54:43.606+09:00  INFO 12352 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-12T21:54:43.962+09:00  INFO 12352 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@194e78af
+2024-03-12T21:54:43.964+09:00  INFO 12352 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-12T21:54:43.983+09:00  INFO 12352 --- [main] kr.co.ch06.mapper.User3MapperTest        : kr.co.ch06.dto.User3DTO@3458dab6
+2024-03-12T21:54:44.014+09:00  INFO 12352 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-12T21:54:44.019+09:00  INFO 12352 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-12T21:58:02.236+09:00  INFO 14116 --- [main] kr.co.ch06.mapper.User3MapperTest        : Starting User3MapperTest using Java 21.0.2 with PID 14116 (started by ksgg1 in C:\Users\ksgg1\OneDrive\바탕 화면\Workspace\Spring\ch06)
+2024-03-12T21:58:02.237+09:00  INFO 14116 --- [main] kr.co.ch06.mapper.User3MapperTest        : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T21:58:03.687+09:00  INFO 14116 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T21:58:04.208+09:00  INFO 14116 --- [main] kr.co.ch06.mapper.User3MapperTest        : Started User3MapperTest in 2.266 seconds (process running for 3.052)
+2024-03-12T21:58:04.991+09:00  INFO 14116 --- [main] kr.co.ch06.mapper.User3MapperTest        : selectUser3()...
+2024-03-12T21:58:05.004+09:00  INFO 14116 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-12T21:58:05.290+09:00  INFO 14116 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5d22ed6c
+2024-03-12T21:58:05.293+09:00  INFO 14116 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-12T21:58:05.361+09:00  INFO 14116 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-12T21:58:05.365+09:00  INFO 14116 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-12T22:00:50.857+09:00  INFO 16732 --- [main] kr.co.ch06.mapper.User3MapperTest        : Starting User3MapperTest using Java 21.0.2 with PID 16732 (started by ksgg1 in C:\Users\ksgg1\OneDrive\바탕 화면\Workspace\Spring\ch06)
+2024-03-12T22:00:50.859+09:00  INFO 16732 --- [main] kr.co.ch06.mapper.User3MapperTest        : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T22:00:52.264+09:00  INFO 16732 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T22:00:52.724+09:00  INFO 16732 --- [main] kr.co.ch06.mapper.User3MapperTest        : Started User3MapperTest in 2.134 seconds (process running for 2.867)
+2024-03-12T22:00:53.494+09:00  INFO 16732 --- [main] kr.co.ch06.mapper.User3MapperTest        : selectUser3s()...
+2024-03-12T22:00:53.509+09:00  INFO 16732 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-12T22:00:53.823+09:00  INFO 16732 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7028b5cc
+2024-03-12T22:00:53.826+09:00  INFO 16732 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-12T22:00:53.879+09:00  INFO 16732 --- [main] kr.co.ch06.mapper.User3MapperTest        : kr.co.ch06.dto.User3DTO@58b03029
+2024-03-12T22:00:53.880+09:00  INFO 16732 --- [main] kr.co.ch06.mapper.User3MapperTest        : kr.co.ch06.dto.User3DTO@539dd2d0
+2024-03-12T22:00:53.880+09:00  INFO 16732 --- [main] kr.co.ch06.mapper.User3MapperTest        : kr.co.ch06.dto.User3DTO@3428420d
+2024-03-12T22:00:53.880+09:00  INFO 16732 --- [main] kr.co.ch06.mapper.User3MapperTest        : kr.co.ch06.dto.User3DTO@523ade68
+2024-03-12T22:00:53.880+09:00  INFO 16732 --- [main] kr.co.ch06.mapper.User3MapperTest        : kr.co.ch06.dto.User3DTO@b529d7e
+2024-03-12T22:00:53.880+09:00  INFO 16732 --- [main] kr.co.ch06.mapper.User3MapperTest        : kr.co.ch06.dto.User3DTO@3664c596
+2024-03-12T22:00:53.904+09:00  INFO 16732 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-12T22:00:53.908+09:00  INFO 16732 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-12T22:01:24.993+09:00  INFO 7264 --- [main] kr.co.ch06.mapper.User3MapperTest        : Starting User3MapperTest using Java 21.0.2 with PID 7264 (started by ksgg1 in C:\Users\ksgg1\OneDrive\바탕 화면\Workspace\Spring\ch06)
+2024-03-12T22:01:24.994+09:00  INFO 7264 --- [main] kr.co.ch06.mapper.User3MapperTest        : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T22:01:26.481+09:00  INFO 7264 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T22:01:26.966+09:00  INFO 7264 --- [main] kr.co.ch06.mapper.User3MapperTest        : Started User3MapperTest in 2.222 seconds (process running for 3.038)
+2024-03-12T22:01:27.726+09:00  INFO 7264 --- [main] kr.co.ch06.mapper.User3MapperTest        : selectUser3s()...
+2024-03-12T22:01:27.743+09:00  INFO 7264 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-12T22:01:28.101+09:00  INFO 7264 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@669580e2
+2024-03-12T22:01:28.102+09:00  INFO 7264 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-12T22:01:28.145+09:00  INFO 7264 --- [main] kr.co.ch06.mapper.User3MapperTest        : User3DTO(uid=A101, name=김유신, birth=1968-05-09, hp=010-1234-1111, addr=경남 김해시)
+2024-03-12T22:01:28.145+09:00  INFO 7264 --- [main] kr.co.ch06.mapper.User3MapperTest        : User3DTO(uid=A102, name=김춘추, birth=1972-11-23, hp=010-1234-2222, addr=경남 경주시)
+2024-03-12T22:01:28.145+09:00  INFO 7264 --- [main] kr.co.ch06.mapper.User3MapperTest        : User3DTO(uid=A103, name=장보고, birth=1978-03-01, hp=010-1234-3333, addr=전남 완도군)
+2024-03-12T22:01:28.145+09:00  INFO 7264 --- [main] kr.co.ch06.mapper.User3MapperTest        : User3DTO(uid=A104, name=강감찬, birth=1979-08-16, hp=010-1234-4444, addr=서울시 관악구)
+2024-03-12T22:01:28.145+09:00  INFO 7264 --- [main] kr.co.ch06.mapper.User3MapperTest        : User3DTO(uid=a105, name=의자왕, birth=2024-03-01, hp=010-1234-5555, addr=서울시 구로구)
+2024-03-12T22:01:28.145+09:00  INFO 7264 --- [main] kr.co.ch06.mapper.User3MapperTest        : User3DTO(uid=J101, name=테스트, birth=2024-03-12, hp=010-4444-4444, addr=테스트시)
+2024-03-12T22:01:28.170+09:00  INFO 7264 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-12T22:01:28.175+09:00  INFO 7264 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-12T22:06:52.194+09:00  INFO 18644 --- [main] kr.co.ch06.mapper.User3MapperTest        : Starting User3MapperTest using Java 21.0.2 with PID 18644 (started by ksgg1 in C:\Users\ksgg1\OneDrive\바탕 화면\Workspace\Spring\ch06)
+2024-03-12T22:06:52.195+09:00  INFO 18644 --- [main] kr.co.ch06.mapper.User3MapperTest        : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T22:06:53.646+09:00  INFO 18644 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T22:06:54.057+09:00  INFO 18644 --- [main] kr.co.ch06.mapper.User3MapperTest        : Started User3MapperTest in 2.129 seconds (process running for 2.98)
+2024-03-12T22:06:54.706+09:00  INFO 18644 --- [main] kr.co.ch06.mapper.User3MapperTest        : selectUser3s()...
+2024-03-12T22:06:54.730+09:00  INFO 18644 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-12T22:06:55.014+09:00  INFO 18644 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5d22ed6c
+2024-03-12T22:06:55.016+09:00  INFO 18644 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-12T22:06:55.066+09:00  INFO 18644 --- [main] kr.co.ch06.mapper.User3MapperTest        : User3DTO(uid=A101, name=김유신, birth=1968-05-09, hp=010-1234-1111, addr=경남 김해시)
+2024-03-12T22:06:55.067+09:00  INFO 18644 --- [main] kr.co.ch06.mapper.User3MapperTest        : User3DTO(uid=A102, name=김춘추, birth=1972-11-23, hp=010-1234-2222, addr=경남 경주시)
+2024-03-12T22:06:55.067+09:00  INFO 18644 --- [main] kr.co.ch06.mapper.User3MapperTest        : User3DTO(uid=A103, name=장보고, birth=1978-03-01, hp=010-1234-3333, addr=전남 완도군)
+2024-03-12T22:06:55.067+09:00  INFO 18644 --- [main] kr.co.ch06.mapper.User3MapperTest        : User3DTO(uid=A104, name=강감찬, birth=1979-08-16, hp=010-1234-4444, addr=서울시 관악구)
+2024-03-12T22:06:55.067+09:00  INFO 18644 --- [main] kr.co.ch06.mapper.User3MapperTest        : User3DTO(uid=a105, name=의자왕, birth=2024-03-01, hp=010-1234-5555, addr=서울시 구로구)
+2024-03-12T22:06:55.067+09:00  INFO 18644 --- [main] kr.co.ch06.mapper.User3MapperTest        : User3DTO(uid=J101, name=테스트, birth=2024-03-12, hp=010-4444-4444, addr=테스트시)
+2024-03-12T22:06:55.096+09:00  INFO 18644 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-12T22:06:55.099+09:00  INFO 18644 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-12T22:07:11.074+09:00  INFO 17264 --- [main] kr.co.ch06.mapper.User3MapperTest        : Starting User3MapperTest using Java 21.0.2 with PID 17264 (started by ksgg1 in C:\Users\ksgg1\OneDrive\바탕 화면\Workspace\Spring\ch06)
+2024-03-12T22:07:11.076+09:00  INFO 17264 --- [main] kr.co.ch06.mapper.User3MapperTest        : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T22:07:12.487+09:00  INFO 17264 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T22:07:12.914+09:00  INFO 17264 --- [main] kr.co.ch06.mapper.User3MapperTest        : Started User3MapperTest in 2.103 seconds (process running for 2.863)
+2024-03-12T22:07:13.644+09:00  INFO 17264 --- [main] kr.co.ch06.mapper.User3MapperTest        : updateUser3()...
+2024-03-12T22:07:13.662+09:00  INFO 17264 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-12T22:07:13.963+09:00  INFO 17264 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1425e531
+2024-03-12T22:07:13.965+09:00  INFO 17264 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-12T22:07:14.000+09:00  INFO 17264 --- [main] kr.co.ch06.mapper.User3MapperTest        : User3DTO(uid=J101, name=테슽흐, birth=2024-04-04, hp=010-1234-4443, addr=우리집)
+2024-03-12T22:07:14.036+09:00  INFO 17264 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-12T22:07:14.041+09:00  INFO 17264 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-12T22:09:15.384+09:00  INFO 8580 --- [main] kr.co.ch06.mapper.User3MapperTest        : Starting User3MapperTest using Java 21.0.2 with PID 8580 (started by ksgg1 in C:\Users\ksgg1\OneDrive\바탕 화면\Workspace\Spring\ch06)
+2024-03-12T22:09:15.386+09:00  INFO 8580 --- [main] kr.co.ch06.mapper.User3MapperTest        : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T22:09:16.711+09:00  INFO 8580 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T22:09:17.110+09:00  INFO 8580 --- [main] kr.co.ch06.mapper.User3MapperTest        : Started User3MapperTest in 1.98 seconds (process running for 2.65)
+2024-03-12T22:09:17.832+09:00  INFO 8580 --- [main] kr.co.ch06.mapper.User3MapperTest        : deleteUser3()...
+2024-03-12T22:09:17.852+09:00  INFO 8580 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-12T22:09:18.149+09:00  INFO 8580 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4604e051
+2024-03-12T22:09:18.151+09:00  INFO 8580 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-12T22:09:18.222+09:00  INFO 8580 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-12T22:09:18.226+09:00  INFO 8580 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-12T22:27:51.701+09:00  INFO 16708 --- [main] kr.co.ch06.mapper.User3MapperTest        : Starting User3MapperTest using Java 21.0.2 with PID 16708 (started by ksgg1 in C:\Users\ksgg1\OneDrive\바탕 화면\Workspace\Spring\ch06)
+2024-03-12T22:27:51.704+09:00  INFO 16708 --- [main] kr.co.ch06.mapper.User3MapperTest        : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T22:27:53.376+09:00  INFO 16708 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T22:27:53.792+09:00  INFO 16708 --- [main] kr.co.ch06.mapper.User3MapperTest        : Started User3MapperTest in 2.445 seconds (process running for 3.269)
+2024-03-12T22:27:54.501+09:00  INFO 16708 --- [main] kr.co.ch06.mapper.User3MapperTest        : deleteUser3()...
+2024-03-12T22:27:54.524+09:00  INFO 16708 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-12T22:27:54.868+09:00  INFO 16708 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@26888c31
+2024-03-12T22:27:54.871+09:00  INFO 16708 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-12T22:27:54.948+09:00  INFO 16708 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-12T22:27:54.959+09:00  INFO 16708 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-12T22:28:14.283+09:00  INFO 7512 --- [main] kr.co.ch06.mapper.User4MapperTest        : Starting User4MapperTest using Java 21.0.2 with PID 7512 (started by ksgg1 in C:\Users\ksgg1\OneDrive\바탕 화면\Workspace\Spring\ch06)
+2024-03-12T22:28:14.284+09:00  INFO 7512 --- [main] kr.co.ch06.mapper.User4MapperTest        : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T22:28:15.717+09:00  INFO 7512 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T22:28:16.163+09:00  INFO 7512 --- [main] kr.co.ch06.mapper.User4MapperTest        : Started User4MapperTest in 2.136 seconds (process running for 2.865)
+2024-03-12T22:28:16.868+09:00  INFO 7512 --- [main] kr.co.ch06.mapper.User4MapperTest        : insertUser4()...
+2024-03-12T22:28:16.892+09:00  INFO 7512 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-12T22:28:17.201+09:00  INFO 7512 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@626df173
+2024-03-12T22:28:17.204+09:00  INFO 7512 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-12T22:28:17.232+09:00  INFO 7512 --- [main] kr.co.ch06.mapper.User4MapperTest        : User4DTO(uid=j101, name=테스트, gender=M, age=25, hp=010-4444-4444, addr=테스트시)
+2024-03-12T22:28:17.294+09:00  INFO 7512 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-12T22:28:17.298+09:00  INFO 7512 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-12T22:30:24.271+09:00  INFO 13900 --- [main] kr.co.ch06.mapper.User4MapperTest        : Starting User4MapperTest using Java 21.0.2 with PID 13900 (started by ksgg1 in C:\Users\ksgg1\OneDrive\바탕 화면\Workspace\Spring\ch06)
+2024-03-12T22:30:24.273+09:00  INFO 13900 --- [main] kr.co.ch06.mapper.User4MapperTest        : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T22:30:25.684+09:00  INFO 13900 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T22:30:26.081+09:00  INFO 13900 --- [main] kr.co.ch06.mapper.User4MapperTest        : Started User4MapperTest in 2.056 seconds (process running for 2.76)
+2024-03-12T22:30:26.775+09:00  INFO 13900 --- [main] kr.co.ch06.mapper.User4MapperTest        : insertUser4()...
+2024-03-12T22:30:26.799+09:00  INFO 13900 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-12T22:30:27.130+09:00  INFO 13900 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a9051fd
+2024-03-12T22:30:27.131+09:00  INFO 13900 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-12T22:30:27.161+09:00  INFO 13900 --- [main] kr.co.ch06.mapper.User4MapperTest        : User4DTO(uid=j101, name=테스트, gender=M, age=25, hp=010-4444-4444, addr=테스트시)
+2024-03-12T22:30:27.200+09:00  INFO 13900 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-12T22:30:27.204+09:00  INFO 13900 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-12T22:32:53.986+09:00  INFO 2596 --- [main] kr.co.ch06.mapper.User4MapperTest        : Starting User4MapperTest using Java 21.0.2 with PID 2596 (started by ksgg1 in C:\Users\ksgg1\OneDrive\바탕 화면\Workspace\Spring\ch06)
+2024-03-12T22:32:53.987+09:00  INFO 2596 --- [main] kr.co.ch06.mapper.User4MapperTest        : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T22:32:55.395+09:00  INFO 2596 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T22:32:55.786+09:00  INFO 2596 --- [main] kr.co.ch06.mapper.User4MapperTest        : Started User4MapperTest in 2.067 seconds (process running for 2.828)
+2024-03-12T22:32:56.538+09:00  INFO 2596 --- [main] kr.co.ch06.mapper.User4MapperTest        : selectUser4()...
+2024-03-12T22:32:56.562+09:00  INFO 2596 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-12T22:32:56.868+09:00  INFO 2596 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4e79c25
+2024-03-12T22:32:56.871+09:00  INFO 2596 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-12T22:32:56.927+09:00  INFO 2596 --- [main] kr.co.ch06.mapper.User4MapperTest        : User4DTO(uid=j101, name=테스트, gender=M, age=25, hp=010-4444-4444, addr=테스트시)
+2024-03-12T22:32:56.957+09:00  INFO 2596 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-12T22:32:56.962+09:00  INFO 2596 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-12T22:34:59.881+09:00  INFO 8896 --- [main] kr.co.ch06.mapper.User4MapperTest        : Starting User4MapperTest using Java 21.0.2 with PID 8896 (started by ksgg1 in C:\Users\ksgg1\OneDrive\바탕 화면\Workspace\Spring\ch06)
+2024-03-12T22:34:59.883+09:00  INFO 8896 --- [main] kr.co.ch06.mapper.User4MapperTest        : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T22:35:01.344+09:00  INFO 8896 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T22:35:01.733+09:00  INFO 8896 --- [main] kr.co.ch06.mapper.User4MapperTest        : Started User4MapperTest in 2.136 seconds (process running for 2.922)
+2024-03-12T22:35:02.452+09:00  INFO 8896 --- [main] kr.co.ch06.mapper.User4MapperTest        : selectUser4s()...
+2024-03-12T22:35:02.464+09:00  INFO 8896 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-12T22:35:02.749+09:00  INFO 8896 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@24c84e65
+2024-03-12T22:35:02.752+09:00  INFO 8896 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-12T22:35:02.799+09:00  INFO 8896 --- [main] kr.co.ch06.mapper.User4MapperTest        : User4DTO(uid=A101, name=김유신, gender=M, age=25, hp=010-1234-1111, addr=경남 김해시)
+2024-03-12T22:35:02.799+09:00  INFO 8896 --- [main] kr.co.ch06.mapper.User4MapperTest        : User4DTO(uid=A102, name=김춘추, gender=M, age=23, hp=010-1234-2222, addr=경남 경주시)
+2024-03-12T22:35:02.799+09:00  INFO 8896 --- [main] kr.co.ch06.mapper.User4MapperTest        : User4DTO(uid=A103, name=장보고, gender=M, age=35, hp=010-1234-3333, addr=전남 완도군)
+2024-03-12T22:35:02.800+09:00  INFO 8896 --- [main] kr.co.ch06.mapper.User4MapperTest        : User4DTO(uid=A104, name=강감찬, gender=M, age=42, hp=010-1234-4444, addr=서울시 관악구)
+2024-03-12T22:35:02.800+09:00  INFO 8896 --- [main] kr.co.ch06.mapper.User4MapperTest        : User4DTO(uid=a107, name=김땡칠, gender=M, age=27, hp=010-1234-7777, addr=포항시 남구)
+2024-03-12T22:35:02.800+09:00  INFO 8896 --- [main] kr.co.ch06.mapper.User4MapperTest        : User4DTO(uid=A108, name=김땡팔, gender=F, age=10, hp=010-1234-8888, addr=경남 진주시)
+2024-03-12T22:35:02.800+09:00  INFO 8896 --- [main] kr.co.ch06.mapper.User4MapperTest        : User4DTO(uid=j101, name=테스트, gender=M, age=25, hp=010-4444-4444, addr=테스트시)
+2024-03-12T22:35:02.827+09:00  INFO 8896 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-12T22:35:02.831+09:00  INFO 8896 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-12T22:39:27.364+09:00  INFO 15052 --- [main] kr.co.ch06.mapper.User4MapperTest        : Starting User4MapperTest using Java 21.0.2 with PID 15052 (started by ksgg1 in C:\Users\ksgg1\OneDrive\바탕 화면\Workspace\Spring\ch06)
+2024-03-12T22:39:27.364+09:00  INFO 15052 --- [main] kr.co.ch06.mapper.User4MapperTest        : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T22:39:28.857+09:00  INFO 15052 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T22:39:29.260+09:00  INFO 15052 --- [main] kr.co.ch06.mapper.User4MapperTest        : Started User4MapperTest in 2.153 seconds (process running for 2.963)
+2024-03-12T22:39:29.902+09:00  INFO 15052 --- [main] kr.co.ch06.mapper.User4MapperTest        : updateUser4()...
+2024-03-12T22:39:29.917+09:00  INFO 15052 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-12T22:39:30.230+09:00  INFO 15052 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4e030feb
+2024-03-12T22:39:30.234+09:00  INFO 15052 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-12T22:39:30.279+09:00  INFO 15052 --- [main] kr.co.ch06.mapper.User4MapperTest        : User4DTO(uid=j101, name=테슽흐, gender=F, age=28, hp=010-4444-1114, addr=테스트시시)
+2024-03-12T22:39:30.311+09:00  INFO 15052 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-12T22:39:30.315+09:00  INFO 15052 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-12T22:41:34.527+09:00  INFO 9388 --- [main] kr.co.ch06.mapper.User4MapperTest        : Starting User4MapperTest using Java 21.0.2 with PID 9388 (started by ksgg1 in C:\Users\ksgg1\OneDrive\바탕 화면\Workspace\Spring\ch06)
+2024-03-12T22:41:34.528+09:00  INFO 9388 --- [main] kr.co.ch06.mapper.User4MapperTest        : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T22:41:35.927+09:00  INFO 9388 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T22:41:36.373+09:00  INFO 9388 --- [main] kr.co.ch06.mapper.User4MapperTest        : Started User4MapperTest in 2.154 seconds (process running for 2.88)
+2024-03-12T22:41:37.129+09:00  INFO 9388 --- [main] kr.co.ch06.mapper.User4MapperTest        : deleteUser4()
+2024-03-12T22:41:37.156+09:00  INFO 9388 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-12T22:41:37.567+09:00  INFO 9388 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4604e051
+2024-03-12T22:41:37.570+09:00  INFO 9388 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-12T22:41:37.651+09:00  INFO 9388 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-12T22:41:37.655+09:00  INFO 9388 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-12T22:47:07.505+09:00  INFO 1792 --- [main] kr.co.ch06.mapper.User5MapperTest        : Starting User5MapperTest using Java 21.0.2 with PID 1792 (started by ksgg1 in C:\Users\ksgg1\OneDrive\바탕 화면\Workspace\Spring\ch06)
+2024-03-12T22:47:07.509+09:00  INFO 1792 --- [main] kr.co.ch06.mapper.User5MapperTest        : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T22:47:09.271+09:00  INFO 1792 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T22:47:09.725+09:00  INFO 1792 --- [main] kr.co.ch06.mapper.User5MapperTest        : Started User5MapperTest in 2.537 seconds (process running for 3.375)
+2024-03-12T22:47:10.581+09:00  INFO 1792 --- [main] kr.co.ch06.mapper.User5MapperTest        : insertUser5()...
+2024-03-12T22:47:10.604+09:00  INFO 1792 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-12T22:47:10.975+09:00  INFO 1792 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@75de7009
+2024-03-12T22:47:10.977+09:00  INFO 1792 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-12T22:47:11.005+09:00  INFO 1792 --- [main] kr.co.ch06.mapper.User5MapperTest        : User5DTO(seq=0, name=테스트, gender=M, age=25, addr=테스트시)
+2024-03-12T22:47:11.055+09:00  INFO 1792 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-12T22:47:11.055+09:00  INFO 1792 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
